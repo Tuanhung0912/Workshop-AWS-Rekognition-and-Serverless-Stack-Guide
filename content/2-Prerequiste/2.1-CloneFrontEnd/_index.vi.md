@@ -11,7 +11,6 @@ pre: " <b> 2.1 </b> "
 
 **1. Clone Project về bằng đường link của Repository Github**
 
-
 {{% notice note %}}
 Trước hết, bạn hãy tải và cài đặt môi trường run-time của Javascript để có thể triển khai dự án 
 {{% /notice %}}

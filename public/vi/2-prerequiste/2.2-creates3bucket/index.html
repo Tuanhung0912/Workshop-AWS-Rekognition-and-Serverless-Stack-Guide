@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="vi" class="js csstransforms3d">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title> :: AWS Rekognition</title>
+    <title>Tạo S3 Bucket để lưu trữ :: AWS Rekognition</title>
 
     
     <link href="/css/nucleus.css?1751540663" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/2-prerequiste/">
+  <body class="" data-url="/vi/2-prerequiste/2.2-creates3bucket/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -61,7 +61,7 @@
 <script type="text/javascript" src="/js/auto-complete.js?1751540663"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/localhost:1313\/";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
 <script type="text/javascript" src="/js/search.js?1751540663"></script>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/1-introduce/">
-           <b> 1. </b> Introduction
+      <a href="/vi/1-introduce/">
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,18 +108,114 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
+    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
+        parent
         
-        active
         
         ">
-      <a href="/2-prerequiste/">
-          
+      <a href="/vi/2-prerequiste/">
+           <b> 2. </b> Các bước chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/2.1-clonefrontend/">
+           <b> 2.1 </b> Clone và Setup Front-End
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.2-creates3bucket/" title="Tạo S3 Bucket để lưu trữ" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/vi/2-prerequiste/2.2-creates3bucket/">
+           <b> 2.2 </b> Tạo S3 Bucket để lưu trữ
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.3-createiamrole/" title="Tạo IAM Role và Attach Policy" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/2.3-createiamrole/">
+           <b> 2.3 </b> Tạo IAM Role và Attach Policy
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -159,23 +255,11 @@
               
               
                   
-                    
-                    
-                      <option id="en" value="//localhost:1313/2-prerequiste/" selected>English</option>
-                    
-                  
-              
-                  
-              
-          
-              
-              
-                  
               
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/2-prerequiste/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/2-prerequiste/2.2-creates3bucket/" selected>Tiếng Việt</option>
                     
                   
               
@@ -263,7 +347,13 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > 
+            
+            
+          
+          
+            <a href='/vi/'>Intelligent Image Recognition</a> > <a href='/vi/2-prerequiste/'>Các bước chuẩn bị</a> > Tạo S3 Bucket để lưu trữ
+          
+        
           
         
           
@@ -274,7 +364,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#khởi-tạo-s3-bucket-dùng-để-lưu-trữ-hình-ảnh-và-kết-quả-phân-tích">Khởi tạo S3 Bucket dùng để lưu trữ hình ảnh và kết quả phân tích</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -290,7 +388,7 @@
           
             <h1>
               
-              
+              Tạo S3 Bucket để lưu trữ
             </h1>
           
 
@@ -298,7 +396,94 @@
 
 
 
-	
+	<h3 id="khởi-tạo-s3-bucket-dùng-để-lưu-trữ-hình-ảnh-và-kết-quả-phân-tích">Khởi tạo S3 Bucket dùng để lưu trữ hình ảnh và kết quả phân tích</h3>
+<p><strong>1. Truy cập vào Console và tìm dịch vụ Amazon S3</strong></p>
+<ul>
+<li>Truy cập vào trang <a href="https://aws.amazon.com/console/">AWS Management Console</a></li>
+<li>Sau đó, tiến hành đăng nhập tài khoản của bạn theo hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/awslogin_1.png" alt="AWS Console"></p>
+<ul>
+<li>Sau khi bấm vào trang thì sẽ hiển thị trang đăng nhập với các trường thông tin cần nhập như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/awslogin_2.png" alt="AWS Console"></p>
+
+<div class="notices warning" ><p>Lưu ý, đây là điều kiện bắt buộc để có thể làm các bước tiếp theo, nếu bạn chưa có tài khoản hãy tiến hành đăng ký tài khoản</p>
+</div>
+
+<ul>
+<li>
+<p><strong>Link tham khảo cách tạo tài khoản:</strong> <a href="https://000001.awsstudygroup.com/">Tạo tài khoản</a></p>
+</li>
+<li>
+<p>Sau khi đã đăng nhập tài khoản thành công thì sẽ chuyển người dùng đến trang chính của <strong>AWS Manage Console</strong> như hình bên dưới:</p>
+</li>
+</ul>
+<p><img src="/images/2.Prerequiste/aws_mainpage.png" alt="AWS Console 2"></p>
+<ul>
+<li>Tại thanh tìm kiếm, hãy nhập <strong>S3</strong></li>
+<li>Chọn vào dịch vụ <strong>S3</strong></li>
+<li><strong>Kết quả như hình bên dưới:</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_1.png" alt="S3 Bucket 1"></p>
+
+<div class="notices tip" ><p>Bạn có thể đánh dấu sao cho dịch vụ mà bạn sử dụng thường xuyên trong suốt quá trình làm, từ đó giúp bạn thuận tiện hơn trong việc truy cập nhanh chóng</p>
+</div>
+
+<ul>
+<li>Tại giao diện chính của dịch vụ S3, bạn hãy bấm vào nút <strong>Create Bucket</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_2.png" alt="S3 Bucket 2"></p>
+<p><strong>2. Cấu hình cho S3 Bucket</strong></p>
+<ul>
+<li>Sau khi bấm vào <strong>Create Bucket</strong> thì sẽ chuyển đến phần khởi tạo Bucket như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_3.png" alt="S3 Bucket 3"></p>
+<p>Tại phần <strong>General configuration:</strong></p>
+<ul>
+<li>AWS Region: <strong>Asia Pacific (Singapore) ap-southeast-1</strong> (hoặc tùy theo Region của bạn muốn sử dụng)</li>
+<li>Bucket type: chọn <strong>General purpose</strong></li>
+<li>Bucket name: nhập <strong>rekognition-image-upload-0912</strong></li>
+</ul>
+<p>Tại phần <strong>Object Ownership:</strong></p>
+<ul>
+<li>Chọn <strong>ACLs disable (recommended)</strong></li>
+</ul>
+
+<div class="notices info" ><p>Lưu ý, Bucket Name của bạn phải là duy nhất và không trùng lặp với các Bucket khác</p>
+</div>
+
+<p><img src="/images/2.Prerequiste/s3bucket_4.png" alt="S3 Bucket 4"></p>
+<p>Tại phần <strong>Block Public Access setting for this bucket:</strong></p>
+<ul>
+<li>Bỏ chọn <strong>Block all public access</strong></li>
+<li>Bỏ chọn <strong>Block public access to buckets and objects granted through new access control lists (ACLs)</strong></li>
+<li>Bỏ chọn <strong>Block public access to buckets and objects granted through any access control lists (ACLs)</strong></li>
+<li>Bỏ chọn <strong>Block public access to buckets and objects granted through new public bucket or access point policies</strong></li>
+<li>Bỏ chọn <strong>Block public and cross-account access to buckets and objects through any public bucket or access point policies</strong></li>
+<li>Tích chọn <strong>I acknowledge that the current settings might result in this bucket and the objects within becoming public.</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_5.png" alt="S3 Bucket 5"></p>
+<p>Tại phần <strong>Bucket Versioning:</strong></p>
+<ul>
+<li>Bucket Versioning: chọn <strong>Disable</strong></li>
+</ul>
+<p>Tại phần <strong>Default Encryption:</strong></p>
+<ul>
+<li>Encryption type: chọn <strong>Server-side encryption with Amazon S3 manage keys (SSE-S3)</strong></li>
+<li>Bucket key: chọn <strong>Enable</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_6.png" alt="S3 Bucket 6"></p>
+<ul>
+<li>Sau khi đã hoàn thành các bước trên, cuộn xuống cuối trang và bấm <strong>Create Bucket</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_7.png" alt="S3 Bucket 7"></p>
+<ul>
+<li>Đợi vài giây, bạn sẽ được chuyển đến trang danh sách bucket và hiển thị thông báo tạo thành công bucket như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_8.png" alt="S3 Bucket 8"></p>
+<p>Bạn đã hoàn thành bước tạo S3 Bucket để lưu trữ hình ảnh và kết quả phân tích</p>
+
 
 
 
@@ -363,8 +548,65 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -378,10 +620,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/1-introduce/" title="Introduction"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/1-introduce/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/2-prerequiste/2.3-createiamrole/" title="Tạo IAM Role và Attach Policy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
