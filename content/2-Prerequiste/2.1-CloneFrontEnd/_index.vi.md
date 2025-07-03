@@ -10,6 +10,7 @@ pre: " <b> 2.1 </b> "
 ### Clone Project từ Repository Github
 
 **1. Clone Project về bằng đường link của Repository Github**
+- Trước hết, bạn hãy tải và cài đặt [node.js](https://nodejs.org/en)
 - Truy cập [đường link github của project](https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Guide.git)
 - Bấm vào biểu tượng **Code** màu xanh lá và Copy đường link của Repository như trong hình bên dưới:
 
