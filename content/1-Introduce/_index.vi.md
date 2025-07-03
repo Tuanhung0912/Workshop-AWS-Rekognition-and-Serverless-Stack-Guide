@@ -8,7 +8,7 @@ pre: " <b> 1. </b> "
 
 **Amazon Rekognition** là một dịch vụ AI mạnh mẽ của AWS, cung cấp khả năng nhận diện và phân tích hình ảnh và video. Amazon Rekognition giúp bạn nhận diện các đối tượng, khuôn mặt, văn bản, và các cảnh vật trong ảnh mà **không cần phải xây dựng mô hình học sâu phức tạp**. Dưới đây là mô hình triển khai của bài lab:
 
-![Deployment model](/images/main.png)
+![Deployment model](/images/main_model.png)
 
 **Từng bước hoạt động của mô hình:**
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="vi" class="js csstransforms3d">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: AWS Rekognition</title>
+    <title>Các bước chuẩn bị :: AWS Rekognition</title>
 
     
     <link href="/css/nucleus.css?1751530256" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/vi/2-prerequiste/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -61,7 +61,7 @@
 <script type="text/javascript" src="/js/auto-complete.js?1751530256"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/localhost:1313\/";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
 <script type="text/javascript" src="/js/search.js?1751530256"></script>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/1-introduce/">
-           <b> 1. </b> Introduction
+      <a href="/vi/1-introduce/">
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,18 +108,58 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
+    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
         
-        
+        active
         
         ">
-      <a href="/2-prerequiste/">
-          
+      <a href="/vi/2-prerequiste/">
+           <b> 2. </b> Các bước chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/vi/2-prerequiste/2.1-clonefrontend/">
+           <b> 2.1 </b> Clone và Setup Front-End
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -161,7 +201,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/categories/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-prerequiste/">English</option>
                     
                   
               
@@ -175,7 +215,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/categories/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/2-prerequiste/" selected>Tiếng Việt</option>
                     
                   
               
@@ -263,7 +303,7 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > Categories
+            <a href='/vi/'>Intelligent Image Recognition</a> > Các bước chuẩn bị
           
         
           
@@ -274,7 +314,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tổng-quan">Tổng Quan</a></li>
+        <li><a href="#nội-dung">Nội dung</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -290,9 +339,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Categories
+              Các bước chuẩn bị
             </h1>
           
 
@@ -300,11 +347,17 @@
 
 
 
-
-
+	<h3 id="tổng-quan">Tổng Quan</h3>
+<p>Trước khi bắt đầu triển khai hệ thống AI nhận diện ảnh thông minh, bạn cần chuẩn bị một số thành phần cơ bản trong môi trường AWS để đảm bảo quá trình phân tích và lưu trữ diễn ra suôn sẻ. Cụ thể, bạn sẽ tạo một S3 Bucket để lưu trữ ảnh gốc mà người dùng tải lên, cũng như các tệp kết quả phân tích ở định dạng JSON. Tiếp theo, cần cấu hình một IAM Role với các quyền truy cập phù hợp như AmazonS3FullAccess, AmazonRekognitionFullAccess, CloudWatchLogsFullAccess&hellip; để Lambda function có thể gọi dịch vụ Rekognition, ghi log vào CloudWatch và ghi dữ liệu vào S3</p>
+<h3 id="nội-dung">Nội dung</h3>
 <ul>
-	
+<li><a href="/vi/2-prerequiste/2.1-clonefrontend/">Clone và Setup Front-End</a></li>
+<li><a href="2.2-CreateS3Bucket/">Tạo S3 Bucket</a></li>
+<li><a href="2.3-CreateIamRole/">Tạo IAM Role và Attach Policy</a></li>
 </ul>
+
+
+
 
 
 <footer class=" footline" >
@@ -361,6 +414,25 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -374,6 +446,9 @@
                     
             
         
+                    
+            
+        
         
         
 
@@ -381,8 +456,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/vi/1-introduce/" title="Giới thiệu"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/1-introduce/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

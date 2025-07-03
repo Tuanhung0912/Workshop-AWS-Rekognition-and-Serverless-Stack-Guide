@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="vi" class="js csstransforms3d">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: AWS Rekognition</title>
+    <title>Clone và Setup Front-End :: AWS Rekognition</title>
 
     
     <link href="/css/nucleus.css?1751530256" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/vi/2-prerequiste/2.1-clonefrontend/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -61,7 +61,7 @@
 <script type="text/javascript" src="/js/auto-complete.js?1751530256"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/localhost:1313\/";
+        var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
 <script type="text/javascript" src="/js/search.js?1751530256"></script>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/1-introduce/">
-           <b> 1. </b> Introduction
+      <a href="/vi/1-introduce/">
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,18 +108,58 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
-        
+    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
+        parent
         
         
         ">
-      <a href="/2-prerequiste/">
-          
+      <a href="/vi/2-prerequiste/">
+           <b> 2. </b> Các bước chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="/vi/2-prerequiste/2.1-clonefrontend/">
+           <b> 2.1 </b> Clone và Setup Front-End
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
               
     </li>
   
@@ -159,23 +199,11 @@
               
               
                   
-                    
-                    
-                      <option id="en" value="//localhost:1313/categories/" selected>English</option>
-                    
-                  
-              
-                  
-              
-          
-              
-              
-                  
               
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/categories/">Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/" selected>Tiếng Việt</option>
                     
                   
               
@@ -263,7 +291,13 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > Categories
+            
+            
+          
+          
+            <a href='/vi/'>Intelligent Image Recognition</a> > <a href='/vi/2-prerequiste/'>Các bước chuẩn bị</a> > Clone và Setup Front-End
+          
+        
           
         
           
@@ -274,7 +308,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#clone-project-từ-repository-github">Clone Project từ Repository Github</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -290,9 +332,7 @@
           
             <h1>
               
-                taxonomy ::
-              
-              Categories
+              Clone và Setup Front-End
             </h1>
           
 
@@ -300,11 +340,74 @@
 
 
 
-
-
+	<h3 id="clone-project-từ-repository-github">Clone Project từ Repository Github</h3>
+<p><strong>1. Clone Project về bằng đường link của Repository Github</strong></p>
 <ul>
-	
+<li>Truy cập <a href="https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Guide.git">đường link github của project</a></li>
+<li>Bấm vào biểu tượng <strong>Code</strong> màu xanh lá và Copy đường link của Repository như trong hình bên dưới:</li>
 </ul>
+<p><img src="/images/2.Prerequiste/github_frontend.png" alt="Github Page"></p>
+<ul>
+<li>Sau khi đã truy cập và copy đường link của Repository</li>
+<li>Bạn hãy mở <strong>Command Prompt</strong> tại thư mục bạn muốn chứa Project như sau</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_1.png" alt="Terminal Page 1"></p>
+<ul>
+<li>Bạn hãy tiến hành Clone Project về thư mục mà bạn muốn chứa Project với cấu trúc như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Frontend.git
+</span></span></code></pre></div><p><img src="/images/2.Prerequiste/terminal_2.png" alt="Terminal Page 2"></p>
+<ul>
+<li>Sau khi bạn đã Clone Project từ Repository về thì sẽ được kết quả như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_3.png" alt="Terminal Page 3"></p>
+<p><strong>2. Tiến hành mở Project và Setup</strong></p>
+<ul>
+<li>Sau khi đã Clone Project từ Repository về thành công</li>
+<li>Bây giờ, hãy tiến hành mở Project nhanh bằng <strong>Command Prompt</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_4.png" alt="Terminal Page 4"></p>
+<ul>
+<li>Sau khi nhập lệnh từ <strong>Command Prompt</strong> để mở project thì sẽ được kết quả như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_1.png" alt="Vs Code 1"></p>
+<ul>
+<li>Tiếp theo, ta tiến hành tải các <strong>dependencies và thư viện</strong> cần thiết cho project chạy bằng môi trường run-time <strong>node.js</strong></li>
+<li>Mở một <strong>Terminal</strong> trong Project và nhập câu lệnh với cấu trúc như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install
+</span></span></code></pre></div><ul>
+<li>Sau khi nhập lệnh như trên thì cần đợi 1-2 phút để tải và hoàn thành</li>
+<li>Sau khi tải xong các thư viện cần thiết thì trong Project xuất hiện thư mục <strong>node_modules</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_2.png" alt="Vs Code 2"></p>
+<ul>
+<li>Tiếp theo, ta tiến hành cập nhật lại các thư viện cho <strong>Vite</strong> bằng câu lệnh với cấu trúc như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm update vite
+</span></span></code></pre></div><ul>
+<li>Sau khi nhập câu lệnh như trên để update các thư viện cần thiết cho <strong>Vite</strong> thì được kết quả như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_3.png" alt="Vs Code 3"></p>
+<p><strong>3. Triển khai Project</strong></p>
+<ul>
+<li>Tiếp theo, ta tiến hành nhập dòng lệnh với cấu trúc như sau để có thể triển khai trang web:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev
+</span></span></code></pre></div><ul>
+<li>Sau khi chạy câu lệnh trên thì Terminal cho ra kết quả như sau:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_5.png" alt="Vs Code 4"></p>
+<ul>
+<li>Truy cập địa chỉ <a href="http://localhost:5173/">http://localhost:5173/</a> để khởi chạy trang Web</li>
+<li>Cần chờ 1-2 phút để Project Build khi chạy lần đầu</li>
+<li>Sau khi chạy xong ta được kết quả hiển thị trang Web như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/webpage_2.png" alt="Web Page 1"></p>
+<p>Bạn đã hoàn thành bước chuẩn bị đầu tiên để Setup và khởi chạy trang web</p>
+
+
+
 
 
 <footer class=" footline" >
@@ -361,6 +464,23 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
                 
                 
 
@@ -374,6 +494,9 @@
                     
             
         
+                    
+            
+        
         
         
 
@@ -381,8 +504,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/vi/2-prerequiste/" title="Các bước chuẩn bị"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/1-introduce/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/vi/1-introduce/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

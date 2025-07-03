@@ -28,6 +28,18 @@
                 href="//localhost:1313/1-introduce/"
                 />
   </url><url>
+    <loc>//localhost:1313/2-prerequiste/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-prerequiste/"
+                />
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
