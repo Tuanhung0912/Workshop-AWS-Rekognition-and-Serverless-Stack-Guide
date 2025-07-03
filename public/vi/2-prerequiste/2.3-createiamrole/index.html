@@ -12,21 +12,21 @@
     <title>Tạo IAM Role và Attach Policy :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751540663" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751540663" rel="stylesheet">
-    <link href="/css/hybrid.css?1751540663" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751540663" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751540663" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751540663" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751540663" rel="stylesheet">
-    <link href="/css/theme.css?1751540663" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751540663" rel="stylesheet">
+    <link href="/css/nucleus.css?1751552633" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751552633" rel="stylesheet">
+    <link href="/css/hybrid.css?1751552633" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751552633" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751552633" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751552633" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751552633" rel="stylesheet">
+    <link href="/css/theme.css?1751552633" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751552633" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751540663" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751552633" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751540663"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751552633"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751540663"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751540663"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751552633"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751552633"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751540663"></script>
+<script type="text/javascript" src="/js/search.js?1751552633"></script>
 
     
   </div>
@@ -368,7 +368,7 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#tạo-iam-role-mới-và-attach-policy-vào-cho-role">Tạo IAM Role mới và Attach Policy vào cho Role</a></li>
       </ul>
     </li>
   </ul>
@@ -396,7 +396,70 @@
 
 
 
-	<h3></h3>
+	<h3 id="tạo-iam-role-mới-và-attach-policy-vào-cho-role">Tạo IAM Role mới và Attach Policy vào cho Role</h3>
+<p><strong>1. Tìm kiếm và truy cập dịch vụ IAM để tạo Role</strong></p>
+<ul>
+<li>Tại thanh tìm kiếm, nhập vào <strong>IAM</strong></li>
+<li>Sau khi tìm kiếm, bấm vào dịch vụ <strong>IAM</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_1.png" alt="Role 1"></p>
+<ul>
+<li>Tại trang dịch vụ của IAM, ở bên trái Navigation Panel</li>
+<li>Chọn <strong>Roles</strong> như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_2.png" alt="Role 2"></p>
+<ul>
+<li>Tại trang Role, ta có thể thấy được danh sách nhiều Role phổ biến và hay sử dụng của AWS</li>
+<li>Ở phía bên phải, bạn hãy bấm button <strong>Create Role</strong> như sau:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_3.png" alt="Role 3"></p>
+<p><strong>2. Tạo mới Role và cấu hình chi tiết</strong></p>
+<ul>
+<li>Tại trang tạo mới <strong>Role</strong>, ta có thể nhìn thấy khi tạo <strong>Role</strong> khi cần trải qua 3 bước chính như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_4.png" alt="Role 4"></p>
+<p>Tại phần <strong>Select Trusted entity:</strong></p>
+<ul>
+<li>Trusted entity type: Chọn <strong>AWS Service</strong></li>
+</ul>
+<p>Tại phần <strong>Use Case:</strong></p>
+<ul>
+<li>Service or use case: chọn <strong>Lambda</strong></li>
+<li>Sau đó bấm button <strong>Next</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_5.png" alt="Role 5"></p>
+<ul>
+<li>Tại trang thực hiện <strong>bước 2 Add permissions cho Role</strong>, bạn có thể thấy được hơn 1000+ Permission Policy như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_6.png" alt="Role 6"></p>
+<ul>
+<li>Tuy nhiên, bạn chỉ cần tìm một vài Policy phù hợp với bài Lab</li>
+<li>Ở đây, ta sẽ tìm kiếm và chọn 3 Policy cần sử dụng như sau: <strong>AmazonS3FullAccess, AmazonRekognitionFullAccess, CloudWatchLogsFullAccess.</strong></li>
+<li>Sau khi đã chọn xong, bạn hãy bấm button <strong>Next</strong></li>
+<li><strong>Kết quả như các hình bên dưới:</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_7.png" alt="Role 7">
+<img src="/images/2.Prerequiste/role_8.png" alt="Role 8">
+<img src="/images/2.Prerequiste/role_9.png" alt="Role 9"></p>
+<ul>
+<li>Tại trang thực hiện <strong>bước 3: Name, review, and create</strong>, Bạn sẽ xem lại toàn bộ cấu hình của cả hai bước trên</li>
+</ul>
+<p>Tại phần <strong>Role details:</strong></p>
+<ul>
+<li>Role name: ta sẽ đặt tên cho Role, Ví dụ: <strong>LambdaAnalyzeRole</strong></li>
+<li>Description: bạn có thể để mặc định hoặc ghi chú tùy ý</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_10.png" alt="Role 10"></p>
+<ul>
+<li>Ở phần <strong>Step 2: Add Permission</strong>, bạn có thể xem lại các Policy đã thêm vào trước đó một cách chi tiết</li>
+<li>Sau khi đã kiểm tra toàn bộ các thông tin thì bạn bấm <strong>Create Role</strong> để tiến hành tạo Role</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_11.png" alt="Role 11"></p>
+<ul>
+<li>Đợi vài giây, sau khi tạo xong hệ thống sẽ chuyển bạn về trang chủ của phần <strong>Role</strong> và hiển thị thông báo tạo thành công như hình bên dưới:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/role_12.png" alt="Role 12"></p>
+<p>Bạn đã hoàn thành các bước chuẩn bị cần thiết để có thể làm bước tiếp theo</p>
 
 
 
@@ -544,19 +607,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751540663"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751540663"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751540663"></script>
-    <script src="/js/jquery.sticky.js?1751540663"></script>
-    <script src="/js/featherlight.min.js?1751540663"></script>
-    <script src="/js/highlight.pack.js?1751540663"></script>
+    <script src="/js/clipboard.min.js?1751552633"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751552633"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751552633"></script>
+    <script src="/js/jquery.sticky.js?1751552633"></script>
+    <script src="/js/featherlight.min.js?1751552633"></script>
+    <script src="/js/highlight.pack.js?1751552633"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751540663"></script>
-    <script src="/js/learn.js?1751540663"></script>
-    <script src="/js/hugo-learn.js?1751540663"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751552633"></script>
+    <script src="/js/learn.js?1751552633"></script>
+    <script src="/js/hugo-learn.js?1751552633"></script>
 
-    <link href="/mermaid/mermaid.css?1751540663" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751540663"></script>
+    <link href="/mermaid/mermaid.css?1751552633" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751552633"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
