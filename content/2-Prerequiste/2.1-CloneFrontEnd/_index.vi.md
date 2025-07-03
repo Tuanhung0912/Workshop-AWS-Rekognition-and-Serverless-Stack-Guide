@@ -10,11 +10,25 @@ pre: " <b> 2.1 </b> "
 ### Clone Project từ Repository Github
 
 **1. Clone Project về bằng đường link của Repository Github**
-- Trước hết, bạn hãy tải và cài đặt [node.js](https://nodejs.org/en)
+
+
+{{% notice note %}}
+Trước hết, bạn hãy tải và cài đặt môi trường run-time của Javascript để có thể triển khai dự án 
+{{% /notice %}}
+
+- Link cài đặt tham khảo: [node.js](https://nodejs.org/en)
 
 ![Node js](/images/2.Prerequiste/nodejs_1.png)
 
-- Truy cập [đường link github của project](https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Guide.git)
+{{% notice info %}}
+Sau đó, bạn hãy tải và cài đặt môi trường Code Editor phổ biến là Visual Studio Code hoặc các môi trường Code Editor tương đương khác
+{{% /notice %}}
+
+- Link cài đặt tham khảo: [Visual Studio Code](https://code.visualstudio.com/)
+
+![Vs code Install](/images/2.Prerequiste/vscode_6.png)
+
+- Tiếp theo, truy cập [đường link github của project](https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Guide.git)
 - Bấm vào biểu tượng **Code** màu xanh lá và Copy đường link của Repository như trong hình bên dưới:
 
 ![Github Page](/images/2.Prerequiste/github_frontend.png)
