@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi" class="js csstransforms3d">
+<html lang="en" class="js csstransforms3d">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tạo S3 Bucket để lưu trữ :: AWS Rekognition</title>
+    <title> :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751639530" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751639530" rel="stylesheet">
-    <link href="/css/hybrid.css?1751639530" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751639530" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751639530" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751639530" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751639530" rel="stylesheet">
-    <link href="/css/theme.css?1751639530" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751639530" rel="stylesheet">
+    <link href="/css/nucleus.css?1751639529" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751639529" rel="stylesheet">
+    <link href="/css/hybrid.css?1751639529" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751639529" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751639529" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751639529" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751639529" rel="stylesheet">
+    <link href="/css/theme.css?1751639529" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751639529" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751639530" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751639529" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751639530"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751639529"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/2-prerequiste/2.2-creates3bucket/">
+  <body class="" data-url="/4-apigateway/4.2-uploadimage/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751639530"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751639530"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751639529"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751639529"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/\/vi";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751639530"></script>
+<script type="text/javascript" src="/js/search.js?1751639529"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
+    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
         
         
         
         ">
-      <a href="/vi/1-introduce/">
-           <b> 1. </b> Giới thiệu
+      <a href="/1-introduce/">
+           <b> 1. </b> Introduction
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,229 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/" title="Các bước chuẩn bị" class="dd-item 
+    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-prerequiste/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.1-clonefrontend/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-prerequiste/2.1-clonefrontend/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.2-creates3bucket/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-prerequiste/2.2-creates3bucket/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-prerequiste/2.3-createiamrole/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2-prerequiste/2.3-createiamrole/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-lambdafunction/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-lambdafunction/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-lambdafunction/3.1-analyzefunction/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-lambdafunction/3.1-analyzefunction/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-lambdafunction/3.2-uploadfunction/" title="" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/3-lambdafunction/3.2-uploadfunction/">
+          
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-apigateway/" title="" class="dd-item 
         parent
         
         
         ">
-      <a href="/vi/2-prerequiste/">
-           <b> 2. </b> Các bước chuẩn bị
+      <a href="/4-apigateway/">
+          
           
             <i class="fas fa-check read-icon"></i>
           
@@ -139,13 +355,13 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End" class="dd-item 
+    <li data-nav-id="/4-apigateway/4.1-analyzeimage/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequiste/2.1-clonefrontend/">
-           <b> 2.1 </b> Clone và Setup Front-End
+      <a href="/4-apigateway/4.1-analyzeimage/">
+          
           
             <i class="fas fa-check read-icon"></i>
           
@@ -167,41 +383,13 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequiste/2.2-creates3bucket/" title="Tạo S3 Bucket để lưu trữ" class="dd-item 
+    <li data-nav-id="/4-apigateway/4.2-uploadimage/" title="" class="dd-item 
         
         active
         
         ">
-      <a href="/vi/2-prerequiste/2.2-creates3bucket/">
-           <b> 2.2 </b> Tạo S3 Bucket để lưu trữ
+      <a href="/4-apigateway/4.2-uploadimage/">
           
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/2-prerequiste/2.3-createiamrole/" title="Tạo IAM Role và Attach Policy" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/2-prerequiste/2.3-createiamrole/">
-           <b> 2.3 </b> Tạo IAM Role và Attach Policy
           
             <i class="fas fa-check read-icon"></i>
           
@@ -230,201 +418,13 @@
  
   
     
-    <li data-nav-id="/vi/3-lambdafunction/" title="Cấu hình Lambda Funtion" class="dd-item 
+    <li data-nav-id="/5-results/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/vi/3-lambdafunction/">
-           <b> 3. </b> Cấu hình Lambda Funtion
+      <a href="/5-results/">
           
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/3-lambdafunction/3.1-analyzefunction/" title="Cấu hình Analyze Function" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/3-lambdafunction/3.1-analyzefunction/">
-           <b> 3.1 </b> Cấu hình Analyze Function
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/3-lambdafunction/3.2-uploadfunction/" title="Cấu hình Upload Function" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/3-lambdafunction/3.2-uploadfunction/">
-           <b> 3.2 </b> Cấu hình Upload Function
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-apigateway/" title="Cấu hình API Gateway" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-apigateway/">
-           <b> 4. </b> Cấu hình API Gateway
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-apigateway/4.1-analyzeimage/" title="Cấu hình API Analyze Image" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-apigateway/4.1-analyzeimage/">
-           <b> 4.1 </b> Cấu hình API Analyze Image
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/4-apigateway/4.2-uploadimage/" title="Cấu hình API Upload Image" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/4-apigateway/4.2-uploadimage/">
-           <b> 4.2 </b> Cấu hình API Upload Image
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/5-results/" title="Kết quả thực nghiệm" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/5-results/">
-           <b> 5. </b> Kết quả thực nghiệm
           
             <i class="fas fa-check read-icon"></i>
           
@@ -471,7 +471,7 @@
                   
                     
                     
-                      <option id="en" value="/2-prerequiste/2.2-creates3bucket/">English</option>
+                      <option id="en" value="/4-apigateway/4.2-uploadimage/" selected>English</option>
                     
                   
               
@@ -485,7 +485,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/2-prerequiste/2.2-creates3bucket/" selected>Tiếng Việt</option>
+                      <option id="vi" value="/vi/4-apigateway/4.2-uploadimage/">Tiếng Việt</option>
                     
                   
               
@@ -577,7 +577,7 @@
             
           
           
-            <a href='/vi/'>Intelligent Image Recognition</a> > <a href='/vi/2-prerequiste/'>Các bước chuẩn bị</a> > Tạo S3 Bucket để lưu trữ
+            <a href='/'>Intelligent Image Recognition</a> > <a href='/4-apigateway/'></a> > 
           
         
           
@@ -590,15 +590,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#khởi-tạo-s3-bucket-dùng-để-lưu-trữ-hình-ảnh-và-kết-quả-phân-tích">Khởi tạo S3 Bucket dùng để lưu trữ hình ảnh và kết quả phân tích</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -614,7 +606,7 @@
           
             <h1>
               
-              Tạo S3 Bucket để lưu trữ
+              
             </h1>
           
 
@@ -622,94 +614,7 @@
 
 
 
-	<h3 id="khởi-tạo-s3-bucket-dùng-để-lưu-trữ-hình-ảnh-và-kết-quả-phân-tích">Khởi tạo S3 Bucket dùng để lưu trữ hình ảnh và kết quả phân tích</h3>
-<p><strong>1. Truy cập vào Console và tìm dịch vụ Amazon S3</strong></p>
-<ul>
-<li>Truy cập vào trang <a href="https://aws.amazon.com/console/">AWS Management Console</a></li>
-<li>Sau đó, tiến hành đăng nhập tài khoản của bạn theo hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/awslogin_1.png" alt="AWS Console"></p>
-<ul>
-<li>Sau khi bấm vào trang thì sẽ hiển thị trang đăng nhập với các trường thông tin cần nhập như hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/awslogin_2.png" alt="AWS Console"></p>
-
-<div class="notices warning" ><p>Lưu ý, đây là điều kiện bắt buộc để có thể làm các bước tiếp theo, nếu bạn chưa có tài khoản hãy tiến hành đăng ký tài khoản</p>
-</div>
-
-<ul>
-<li>
-<p><strong>Link tham khảo cách tạo tài khoản:</strong> <a href="https://000001.awsstudygroup.com/">Tạo tài khoản</a></p>
-</li>
-<li>
-<p>Sau khi đã đăng nhập tài khoản thành công thì sẽ chuyển người dùng đến trang chính của <strong>AWS Manage Console</strong> như hình bên dưới:</p>
-</li>
-</ul>
-<p><img src="/images/2.Prerequiste/aws_mainpage.png" alt="AWS Console 2"></p>
-<ul>
-<li>Tại thanh tìm kiếm, hãy nhập <strong>S3</strong></li>
-<li>Chọn vào dịch vụ <strong>S3</strong></li>
-<li><strong>Kết quả như hình bên dưới:</strong></li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_1.png" alt="S3 Bucket 1"></p>
-
-<div class="notices tip" ><p>Bạn có thể đánh dấu sao cho dịch vụ mà bạn sử dụng thường xuyên trong suốt quá trình làm, từ đó giúp bạn thuận tiện hơn trong việc truy cập nhanh chóng</p>
-</div>
-
-<ul>
-<li>Tại giao diện chính của dịch vụ S3, bạn hãy bấm vào nút <strong>Create Bucket</strong> như hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_2.png" alt="S3 Bucket 2"></p>
-<p><strong>2. Cấu hình cho S3 Bucket</strong></p>
-<ul>
-<li>Sau khi bấm vào <strong>Create Bucket</strong> thì sẽ chuyển đến phần khởi tạo Bucket như hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_3.png" alt="S3 Bucket 3"></p>
-<p>Tại phần <strong>General configuration:</strong></p>
-<ul>
-<li>AWS Region: <strong>Asia Pacific (Singapore) ap-southeast-1</strong> (hoặc tùy theo Region của bạn muốn sử dụng)</li>
-<li>Bucket type: chọn <strong>General purpose</strong></li>
-<li>Bucket name: nhập <strong>rekognition-image-upload-0912</strong></li>
-</ul>
-<p>Tại phần <strong>Object Ownership:</strong></p>
-<ul>
-<li>Chọn <strong>ACLs disable (recommended)</strong></li>
-</ul>
-
-<div class="notices info" ><p>Lưu ý, Bucket Name của bạn phải là duy nhất và không trùng lặp với các Bucket khác</p>
-</div>
-
-<p><img src="/images/2.Prerequiste/s3bucket_4.png" alt="S3 Bucket 4"></p>
-<p>Tại phần <strong>Block Public Access setting for this bucket:</strong></p>
-<ul>
-<li>Bỏ chọn <strong>Block all public access</strong></li>
-<li>Bỏ chọn <strong>Block public access to buckets and objects granted through new access control lists (ACLs)</strong></li>
-<li>Bỏ chọn <strong>Block public access to buckets and objects granted through any access control lists (ACLs)</strong></li>
-<li>Bỏ chọn <strong>Block public access to buckets and objects granted through new public bucket or access point policies</strong></li>
-<li>Bỏ chọn <strong>Block public and cross-account access to buckets and objects through any public bucket or access point policies</strong></li>
-<li>Tích chọn <strong>I acknowledge that the current settings might result in this bucket and the objects within becoming public.</strong></li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_5.png" alt="S3 Bucket 5"></p>
-<p>Tại phần <strong>Bucket Versioning:</strong></p>
-<ul>
-<li>Bucket Versioning: chọn <strong>Disable</strong></li>
-</ul>
-<p>Tại phần <strong>Default Encryption:</strong></p>
-<ul>
-<li>Encryption type: chọn <strong>Server-side encryption with Amazon S3 manage keys (SSE-S3)</strong></li>
-<li>Bucket key: chọn <strong>Enable</strong></li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_6.png" alt="S3 Bucket 6"></p>
-<ul>
-<li>Sau khi đã hoàn thành các bước trên, cuộn xuống cuối trang và bấm <strong>Create Bucket</strong> như hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_7.png" alt="S3 Bucket 7"></p>
-<ul>
-<li>Đợi vài giây, bạn sẽ được chuyển đến trang danh sách bucket và hiển thị thông báo tạo thành công bucket như hình bên dưới:</li>
-</ul>
-<p><img src="/images/2.Prerequiste/s3bucket_8.png" alt="S3 Bucket 8"></p>
-<p>Bạn đã hoàn thành bước tạo S3 Bucket để lưu trữ hình ảnh và kết quả phân tích</p>
-
+	
 
 
 
@@ -768,7 +673,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -783,9 +687,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -803,7 +704,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -819,9 +719,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -892,6 +789,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -906,6 +804,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -923,6 +824,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -941,6 +843,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -962,10 +867,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/2-prerequiste/2.1-clonefrontend/" title="Clone và Setup Front-End"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/4-apigateway/4.1-analyzeimage/" title=""> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/2-prerequiste/2.3-createiamrole/" title="Tạo IAM Role và Attach Policy" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/5-results/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -975,19 +880,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751639530"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751639530"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751639530"></script>
-    <script src="/js/jquery.sticky.js?1751639530"></script>
-    <script src="/js/featherlight.min.js?1751639530"></script>
-    <script src="/js/highlight.pack.js?1751639530"></script>
+    <script src="/js/clipboard.min.js?1751639529"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751639529"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751639529"></script>
+    <script src="/js/jquery.sticky.js?1751639529"></script>
+    <script src="/js/featherlight.min.js?1751639529"></script>
+    <script src="/js/highlight.pack.js?1751639529"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751639530"></script>
-    <script src="/js/learn.js?1751639530"></script>
-    <script src="/js/hugo-learn.js?1751639530"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751639529"></script>
+    <script src="/js/learn.js?1751639529"></script>
+    <script src="/js/hugo-learn.js?1751639529"></script>
 
-    <link href="/mermaid/mermaid.css?1751639530" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751639530"></script>
+    <link href="/mermaid/mermaid.css?1751639529" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751639529"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

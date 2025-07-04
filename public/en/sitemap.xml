@@ -28,6 +28,42 @@
                 href="/1-introduce/"
                 />
   </url><url>
+    <loc>/2-prerequiste/2.1-clonefrontend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.1-clonefrontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.1-clonefrontend/"
+                />
+  </url><url>
+    <loc>/2-prerequiste/2.2-creates3bucket/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.2-creates3bucket/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.2-creates3bucket/"
+                />
+  </url><url>
+    <loc>/2-prerequiste/2.3-createiamrole/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.3-createiamrole/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.3-createiamrole/"
+                />
+  </url><url>
     <loc>/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
@@ -38,6 +74,90 @@
                 rel="alternate"
                 hreflang="en"
                 href="/2-prerequiste/"
+                />
+  </url><url>
+    <loc>/3-lambdafunction/3.1-analyzefunction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-lambdafunction/3.1-analyzefunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-lambdafunction/3.1-analyzefunction/"
+                />
+  </url><url>
+    <loc>/3-lambdafunction/3.2-uploadfunction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-lambdafunction/3.2-uploadfunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-lambdafunction/3.2-uploadfunction/"
+                />
+  </url><url>
+    <loc>/3-lambdafunction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-lambdafunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-lambdafunction/"
+                />
+  </url><url>
+    <loc>/4-apigateway/4.1-analyzeimage/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-apigateway/4.1-analyzeimage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-apigateway/4.1-analyzeimage/"
+                />
+  </url><url>
+    <loc>/4-apigateway/4.2-uploadimage/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-apigateway/4.2-uploadimage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-apigateway/4.2-uploadimage/"
+                />
+  </url><url>
+    <loc>/4-apigateway/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-apigateway/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-apigateway/"
+                />
+  </url><url>
+    <loc>/5-results/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/5-results/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/5-results/"
                 />
   </url><url>
     <loc>/categories/</loc>
