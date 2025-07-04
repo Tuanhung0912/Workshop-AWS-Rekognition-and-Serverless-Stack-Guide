@@ -17,4 +17,7 @@ Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và th�
 
 1. [Giới thiệu](1-introduce/)
 2. [Các bước chuẩn bị](2-Prerequiste/)
+3. [Cấu hình Lambda Function](3-LambdaFunction/)
+4. [Cấu hình API Gateway](4-APIGateway/)
+
 
