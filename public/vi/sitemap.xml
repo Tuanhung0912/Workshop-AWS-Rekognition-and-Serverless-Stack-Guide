@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/vi/3-lambdafunction/3.1-analyzefunction/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/4-apigateway/4.1-analyzeimage/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -44,6 +50,12 @@
                 href="//localhost:1313/vi/2-prerequiste/"
                 />
   </url><url>
+    <loc>//localhost:1313/vi/4-apigateway/4.2-uploadimage/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/3-lambdafunction/3.2-uploadfunction/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/vi/2-prerequiste/2.2-creates3bucket/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,6 +63,9 @@
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/vi/2-prerequiste/2.3-createiamrole/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/vi/4-apigateway/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/vi/categories/</loc>
