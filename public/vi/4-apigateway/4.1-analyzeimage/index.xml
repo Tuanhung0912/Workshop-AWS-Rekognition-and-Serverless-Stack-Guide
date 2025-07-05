@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cấu hình API Analyze Image on AWS Rekognition</title>
-    <link>/vi/4-apigateway/4.1-analyzeimage/</link>
+    <link>//localhost:1313/vi/4-apigateway/4.1-analyzeimage/</link>
     <description>Recent content in Cấu hình API Analyze Image on AWS Rekognition</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/vi/4-apigateway/4.1-analyzeimage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/vi/4-apigateway/4.1-analyzeimage/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

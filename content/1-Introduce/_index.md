@@ -5,6 +5,7 @@ weight : 1
 chapter : false
 pre : " <b> 1. </b> "
 ---
+
 **Amazon Rekognition** is a powerful AI service from AWS that provides the ability to recognize and analyze images and videos. Amazon Rekognition helps you identify objects, faces, text, and scenes in images **without the need to build complex deep learning models**. Below is the deployment model of the lab:
 
 ![Deployment model](/images/main_model.png)

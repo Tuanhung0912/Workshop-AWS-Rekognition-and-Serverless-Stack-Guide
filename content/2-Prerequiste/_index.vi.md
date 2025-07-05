@@ -13,5 +13,5 @@ Trước khi bắt đầu triển khai hệ thống AI nhận diện ảnh thôn
 ### Nội Dung
 
 - [Clone và Setup Front-End](2.1-CloneFrontEnd/)
-- [Tạo S3 Bucket](2.2-CreateS3Bucket/)
+- [Tạo S3 Bucket để lưu trữ](2.2-CreateS3Bucket/)
 - [Tạo IAM Role và Attach Policy](2.3-CreateIamRole/)
