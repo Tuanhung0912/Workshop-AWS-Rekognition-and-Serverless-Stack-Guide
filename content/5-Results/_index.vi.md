@@ -157,7 +157,7 @@ Chức năng **Upload Image (Tải ảnh cùng với kết quả phân tích lê
 
 ![RS 26](/images/5.Results/rs_26.png)
 
-Chúc mừng bạn đã hoàn thành toàn bộ bài lab, qua đó có thể tham khảo được một trong nhiều cách để có thể tận dụng tối đa sức mạnh của các dịch vụ AWS được triển khai trong bài lab này.
+Chúc mừng bạn đã hoàn thành phần thực nghiệm kết quả, qua đó có thể tham khảo được một trong nhiều cách để có thể tận dụng tối đa sức mạnh của các dịch vụ AWS được triển khai trong bài lab này.
 
 
 
