@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title> :: AWS Rekognition</title>
+    <title>Experiment Results :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751702799" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751702799" rel="stylesheet">
-    <link href="/css/hybrid.css?1751702799" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751702799" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751702799" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751702799" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751702799" rel="stylesheet">
-    <link href="/css/theme.css?1751702799" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751702799" rel="stylesheet">
+    <link href="/css/nucleus.css?1751703244" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751703244" rel="stylesheet">
+    <link href="/css/hybrid.css?1751703244" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751703244" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751703244" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751703244" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751703244" rel="stylesheet">
+    <link href="/css/theme.css?1751703244" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751703244" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751702799" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751703244" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751702799"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751703244"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751702799"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751702799"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751703244"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751703244"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751702799"></script>
+<script type="text/javascript" src="/js/search.js?1751703244"></script>
 
     
   </div>
@@ -418,13 +418,13 @@
  
   
     
-    <li data-nav-id="/5-results/" title="" class="dd-item 
+    <li data-nav-id="/5-results/" title="Experiment Results" class="dd-item 
         
         active
         
         ">
       <a href="/5-results/">
-          
+           <b> 5. </b> Experiment Results
           
             <i class="fas fa-check read-icon"></i>
           
@@ -677,7 +677,7 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > 
+            <a href='/'>Intelligent Image Recognition</a> > Experiment Results
           
         
           
@@ -688,7 +688,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#check-and-execute-the-applications-results-for-both-functions">Check and execute the application&rsquo;s results for both functions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -704,7 +712,7 @@
           
             <h1>
               
-              
+              Experiment Results
             </h1>
           
 
@@ -712,7 +720,153 @@
 
 
 
-	
+	<h3 id="check-and-execute-the-applications-results-for-both-functions">Check and execute the application&rsquo;s results for both functions</h3>
+<p>In this section, you will deploy the application with all the components configured, including API Gateway, Lambda function, and S3 Bucket. You will connect the frontend user interface with the serverless backend to handle image analysis requests. This process starts when the user uploads an image through the web interface, and the application sends the image to API Gateway, where the request is forwarded to the Lambda function to perform image recognition with Amazon Rekognition. After recognition, the result will be stored in the S3 Bucket and returned to the user as a link for easy access.</p>
+<p><strong>1. Save the Endpoint and Routes links of the APIs</strong></p>
+<ul>
+<li>In the previous section, after creating and configuring 2 APIs: <strong>AnalyzeImage and UploadImage</strong></li>
+<li>In this section, you need to save the 2 Endpoint and Routes links</li>
+</ul>
+<p><img src="/images/5.Results/rs_1.png" alt="RS 1"></p>
+<ul>
+<li>On the left Navigation Panel, select the section as shown below:</li>
+</ul>
+<p><img src="/images/5.Results/rs_2.png" alt="RS 2"></p>
+<ul>
+<li>On this page, all detailed information of this API will be displayed</li>
+<li>In the <strong>API details</strong> section, at the top right, there is the <strong>Default Endpoint</strong></li>
+<li>Here, the <strong>Invoke URL</strong> of the API and its status will be displayed</li>
+<li><strong>Copy this Endpoint link as shown below:</strong></li>
+</ul>
+
+<div class="notices info" ><p>Note, this is a random API Endpoint, each API will have a different link, so please replace it with your own API link</p>
+</div>
+
+<p><img src="/images/5.Results/rs_3.png" alt="RS 3"></p>
+<p><strong>2. Replace the Endpoint and Routes links of the AnalyzeImage API</strong></p>
+<ul>
+<li>Go back to the Front-End Project in section 1</li>
+<li>Find the configuration folder and file at: <strong>src/App.jsx</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_4.png" alt="RS 4"></p>
+<ul>
+<li>Next, find the <strong>handleAnalyzeImage</strong> function</li>
+<li>In this function, replace the <strong>API link you just copied</strong> in the previous step</li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_5.png" alt="RS 5"></p>
+<p><img src="/images/5.Results/rs_11.png" alt="RS 11"></p>
+<ul>
+<li>Next, find the <strong>routes</strong> of the API configured earlier</li>
+<li>And copy the <strong>routes</strong> of the <strong>POST</strong> method with the path <strong>/AnalyzeImage</strong></li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_6.png" alt="RS 6"></p>
+<p><img src="/images/5.Results/rs_7.png" alt="RS 7"></p>
+<ul>
+<li>Next, append it to the end of the <strong>API Endpoint</strong> in the code and save as follows:</li>
+</ul>
+<p><img src="/images/5.Results/rs_8.png" alt="RS 8"></p>
+<p><strong>3. Replace the Endpoint and Routes links of the UploadImage API</strong></p>
+<ul>
+<li>Go back to the Front-End Project in section 1</li>
+<li>Find the configuration folder and file at: <strong>src/App.jsx</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_4.png" alt="RS 4"></p>
+<ul>
+<li>Next, find the <strong>UploadImage</strong> API on the system page</li>
+<li>Then copy the <strong>EndPoint</strong> of the <strong>UploadImage</strong> API</li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_10.png" alt="RS 10"></p>
+<ul>
+<li>
+<p>Next, find the <strong>handleUploadToS3</strong> function</p>
+</li>
+<li>
+<p>In this function, replace the <strong>API link you just copied</strong> in the previous step</p>
+</li>
+<li>
+<p><strong>Result as shown below:</strong></p>
+</li>
+</ul>
+<p><img src="/images/5.Results/rs_9.png" alt="RS 9"></p>
+<p><img src="/images/5.Results/rs_12.png" alt="RS 12"></p>
+<ul>
+<li>Next, find the <strong>routes</strong> of the API configured earlier</li>
+<li>And copy the <strong>routes</strong> of the <strong>POST</strong> method with the path <strong>/UploadImage</strong></li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_13.png" alt="RS 13"></p>
+<p><img src="/images/5.Results/rs_14.png" alt="RS 14"></p>
+<ul>
+<li>Next, append it to the end of the <strong>API Endpoint</strong> in the code and save as follows:</li>
+</ul>
+<p><img src="/images/5.Results/rs_15.png" alt="RS 15"></p>
+<p><strong>4. Check the results</strong></p>
+<ul>
+<li>In the Project, under the <strong>terminal</strong> window</li>
+<li>Enter the following command to run the Web page:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev
+</span></span></code></pre></div><p><img src="/images/5.Results/rs_16.png" alt="RS 16"></p>
+<ul>
+<li>Wait a few seconds, the code will run and display the link to access the website</li>
+<li>You can hover over the link in the <strong>Terminal</strong> and press: <strong>Ctrl + Left Click</strong></li>
+<li>Or access <a href="http://localhost:5173/">http://localhost:5173/</a> to open the website</li>
+</ul>
+<p><img src="/images/5.Results/rs_17.png" alt="RS 17"></p>
+<ul>
+<li>On the website, there will be a section for you to drop an image or select an image from your computer as follows:</li>
+</ul>
+<p><img src="/images/5.Results/rs_18.png" alt="RS 18"></p>
+<ul>
+<li>After uploading any image from your computer</li>
+<li>You will see that the website can perform 2 functions: <strong>AnalyzeImage, Upload To S3</strong></li>
+<li>Follow the steps <strong>numbered in the images</strong> as follows:</li>
+</ul>
+<p><img src="/images/5.Results/rs_19.png" alt="RS 19"></p>
+<p><strong>Analyze Image function:</strong></p>
+<ul>
+<li>After successfully uploading the image</li>
+<li>Click the <strong>Analyze Image</strong> button to perform the function</li>
+<li>Wait a moment, then the website will display the analysis result in the <strong>Component Result</strong></li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_20.png" alt="RS 20"></p>
+<ul>
+<li>You can view the detailed <strong>JSON Script</strong> that contains the image analysis result returned by <strong>AWS Rekognition</strong> with information such as <strong>Label, Name, Confidence</strong>, etc. The result will include up to <strong>10 labels</strong> with confidence above <strong>75%</strong></li>
+<li><strong>Labels</strong>: label</li>
+<li><strong>Name</strong>: Name of the object</li>
+<li><strong>Confidence</strong>: Confidence level</li>
+<li><strong>Categories</strong>: Category</li>
+<li><strong>Detailed result as shown below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_21.png" alt="RS 21"></p>
+<p><strong>Upload Image function (Upload image and analysis result to S3):</strong></p>
+<ul>
+<li>After performing the image analysis function</li>
+<li>Next, you will upload the image to the S3 Bucket by clicking the <strong>Upload To S3</strong> button</li>
+<li>Wait a moment, when the <strong>image and result</strong> have been successfully uploaded to the <strong>S3 Bucket</strong>, the system will return a success notification as shown below:</li>
+</ul>
+<p><img src="/images/5.Results/rs_22.png" alt="RS 22"></p>
+<ul>
+<li>Check the <strong>S3 Bucket to see if the image and analysis result</strong> have actually been uploaded as follows:</li>
+<li>Access the <strong>S3 Bucket and click on your Bucket name</strong></li>
+<li><strong>Result as shown in the images below:</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_23.png" alt="RS 23"></p>
+<ul>
+<li>You can see that the S3 Bucket will automatically create 2 folders: <strong>images and results</strong></li>
+</ul>
+<p><img src="/images/5.Results/rs_24.png" alt="RS 24"></p>
+<ul>
+<li>After checking, you will see that there is <strong>1 image</strong> and <strong>1 JSON file</strong> in the corresponding <strong>folder</strong> as follows:</li>
+</ul>
+<p><img src="/images/5.Results/rs_25.png" alt="RS 25"></p>
+<p><img src="/images/5.Results/rs_26.png" alt="RS 26"></p>
+<p>Congratulations, you have completed the experiment and can now refer to one of many ways to maximize the power of AWS services deployed in this lab.</p>
+
 
 
 
@@ -1038,19 +1192,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751702799"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751702799"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751702799"></script>
-    <script src="/js/jquery.sticky.js?1751702799"></script>
-    <script src="/js/featherlight.min.js?1751702799"></script>
-    <script src="/js/highlight.pack.js?1751702799"></script>
+    <script src="/js/clipboard.min.js?1751703245"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751703245"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751703245"></script>
+    <script src="/js/jquery.sticky.js?1751703245"></script>
+    <script src="/js/featherlight.min.js?1751703245"></script>
+    <script src="/js/highlight.pack.js?1751703245"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751702799"></script>
-    <script src="/js/learn.js?1751702799"></script>
-    <script src="/js/hugo-learn.js?1751702799"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751703245"></script>
+    <script src="/js/learn.js?1751703245"></script>
+    <script src="/js/hugo-learn.js?1751703245"></script>
 
-    <link href="/mermaid/mermaid.css?1751702799" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751702799"></script>
+    <link href="/mermaid/mermaid.css?1751703245" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751703245"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
