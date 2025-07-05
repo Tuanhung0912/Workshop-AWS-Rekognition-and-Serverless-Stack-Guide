@@ -15,3 +15,10 @@ In this lab, you will learn the basic concepts and practice using Amazon Rekogni
 ### Content
  1. [Introduction](1-introduce/)
  2. [Preparation](2-prerequiste/)
+ 3. [Configure Lambda Function](3-LambdaFunction/)
+ 4. [Configure API Gateway](4-APIGateway/)
+ 5. [Experiment Results](5-Results/)
+ 6. [View Activity Logs with CloudWatch](6-CloudWatch/)
+ 7. [Update Policy for S3 Bucket (Optional)](7-S3Policy/)
+ 8. [Reference Video Demo](8-Demo/)
+ 9. [Clean Up Resources](9-CleanUp/)

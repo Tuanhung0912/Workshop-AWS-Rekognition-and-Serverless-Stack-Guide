@@ -20,5 +20,9 @@ Trong bài lab này, bạn sẽ tìm hiểu các khái niệm cơ bản và th�
 3. [Cấu hình Lambda Function](3-LambdaFunction/)
 4. [Cấu hình API Gateway](4-APIGateway/)
 5. [Kết quả thực nghiệm](5-Results/)
+6. [Xem Logs hoạt động bằng CloudWatch](6-CloudWatch/)
+7. [Cập nhật Policy cho S3 Bucket (Tùy chọn)](7-S3Policy/)
+8. [Video Demo tham khảo](8-Demo/)
+9. [Dọn dẹp tài nguyên](9-CleanUp/)
 
 

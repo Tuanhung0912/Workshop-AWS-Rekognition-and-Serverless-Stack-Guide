@@ -25,7 +25,7 @@
 	"title": "Intelligent Image Recognition",
 	"tags": [],
 	"description": "",
-	"content": "Intelligent Image Recognition with Amazon Rekognition and Serverless Stack Overall In this lab, you will learn the basic concepts and practice using Amazon Rekognition – a powerful AI image recognition service, and how to implement a Serverless Stack solution. You will practice creating automated pipelines to analyze and recognize images using Amazon Rekognition, while integrating Serverless services such as AWS Lambda, S3, and API Gateway to build an intelligent image processing system.\nContent Introduction Preparation "
+	"content": "Intelligent Image Recognition with Amazon Rekognition and Serverless Stack Overall In this lab, you will learn the basic concepts and practice using Amazon Rekognition – a powerful AI image recognition service, and how to implement a Serverless Stack solution. You will practice creating automated pipelines to analyze and recognize images using Amazon Rekognition, while integrating Serverless services such as AWS Lambda, S3, and API Gateway to build an intelligent image processing system.\nContent Introduction Preparation Configure Lambda Function Configure API Gateway Experiment Results View Activity Logs with CloudWatch Update Policy for S3 Bucket (Optional) Reference Video Demo Clean Up Resources "
 },
 {
 	"uri": "//localhost:1313/1-introduce/",
@@ -92,31 +92,31 @@
 },
 {
 	"uri": "//localhost:1313/6-cloudwatch/",
-	"title": "",
+	"title": "View Activity Logs with CloudWatch",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Check Website Activity Logs with CloudWatch 1. Search for and access the CloudWatch service page\nIn the search bar, enter: CloudWatch The result will be displayed as shown below: On the main page of the CloudWatch service On the left Navigation Panel, select Log groups The result will be displayed as shown below: 2. Check and view activity logs\nOn the main Log groups page You can see that there are 2 Log groups automatically created after we performed the Analyze Image and Upload Image functions in the previous section This is where we can check how the functions operate Select the Log group for the Analyze Image function On the Log group details page for the Analyze Image function You can see other detailed information Especially Log Streams, these are the main activity streams each time you perform the function; each execution will add a Log Stream to record the detailed activity of that execution Here are the details of the Log Streams activity: Let\u0026rsquo;s try an example where the Analyze Image function encounters an error and check the Log Streams result First, go to the Lambda Function for the Analyze Image function Then proceed to edit any line of code as follows: Explanation: We will edit the line of code as shown above so that the lambda function cannot call the AWS Rekognition service client. The system will then report an error on the Front-End because it cannot perform the image analysis function and will record the error Log Streams as shown in the following images: Through this section, you can understand how Log groups work in CloudWatch. This service will help you conveniently monitor your application\u0026rsquo;s activities and easily display all error information, making\n"
 },
 {
 	"uri": "//localhost:1313/7-s3policy/",
-	"title": "",
+	"title": "Update Policy for S3 Bucket (Optional)",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Update the Policy configuration for the S3 Bucket to view image information and analysis results Note, this is the configuration section for the S3 Bucket Policy. To be able to directly view images and image analysis results via a public URL, you can refer to this section.\n1. Access the S3 Bucket Policy details page\nIn section 5, we were able to perform the image analysis function and upload images to the S3 Bucket However, viewing images and results will be denied because the S3 bucket policy has not been set up yet First, click on the image as shown below: Then, the system will redirect the user to the detailed information page of that Object On the detailed information page of the Object (image), look to the right corner and you will see an Object URL section This is the URL of the Object, you can click or copy it to a new browser tab to view: The result will be displayed as shown in the images below: After accessing the Object URL link, you may see the system report Access Denied and the image cannot be displayed 2. Configure the S3 Bucket Policy to view images and analysis results\nGo back to the Bucket list page, click on the Bucket name Here, switch to the Permission tab as shown below: On the information page of the Permission tab Scroll down a bit You will see the Bucket policy section, look to the right and click the Edit button This allows you to edit the policy of the Bucket After switching to the Edit Bucket Policy section, you will see the part where we will edit by adding a JSON Script as shown below: Here, you will configure the Bucket policy with the following JSON code: { \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, // Policy version, according to AWS IAM standard \u0026#34;Statement\u0026#34;: [ { \u0026#34;Sid\u0026#34;: \u0026#34;AllowPublicReadAccessToImagesAndResultFolders\u0026#34;, // Identifier for the policy statement (can be changed for easier identification) \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, // Specifies the \u0026#34;Allow\u0026#34; action for the actions described below \u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;, // Specifies that all users (Public Access) can perform this action \u0026#34;Action\u0026#34;: \u0026#34;s3:GetObject\u0026#34;, // Grants permission to perform the \u0026#34;s3:GetObject\u0026#34; action, i.e., allows users to read (GET) objects from S3 \u0026#34;Resource\u0026#34;: [ // Grants permission for the specific resources below \u0026#34;arn:aws:s3:::your-bucket-name/images/*\u0026#34;, // Allows access to objects in the \u0026#34;images\u0026#34; folder of the bucket \u0026#34;arn:aws:s3:::your-bucket-name/results/*\u0026#34; // Allows access to objects in the \u0026#34;results\u0026#34; folder of the bucket ] } ] } Note, please replace with your own S3 Bucket name\nAfter configuring as above, you will get the result as shown below Save the changes by clicking the Save changes button Wait a few seconds, the system will process and return a success notification along with the updated Bucket policy displayed on the website as follows: Go back to the detailed information page of the Object Access the Object URL link The result will be displayed as shown in the images below: Here, you can now view the image directly via the public object URL as shown below: Similarly, in the Edit Policy section of the Bucket, we have also configured the /result folder so that you can view the image analysis results as shown below: Through this section, you can refer to how to quickly and directly view images\n"
 },
 {
 	"uri": "//localhost:1313/8-demo/",
-	"title": "",
+	"title": "Reference Video Demo",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Reference Video Demo for the entire lab In the Reference Video Demo section, you will experience a visual walkthrough of the entire process of deploying an intelligent image recognition system with Amazon Rekognition and the Serverless Stack. The video will guide you step-by-step, from configuring AWS services such as Lambda, API Gateway, and S3 to image processing: uploading images to the system, analyzing images via Rekognition, and storing analysis results in S3. Through the video, you will clearly see how these components connect and interact in practice, helping you easily visualize and grasp the process, while also providing tips and techniques to apply to your own project.\nReference Demo Link: Here "
 },
 {
 	"uri": "//localhost:1313/9-cleanup/",
-	"title": "",
+	"title": "Clean Up Resources",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Clean up service resources after use 1. Clean up IAM service\nIn the search bar, enter IAM On the IAM service page, on the left Navigation Panel, select Role On the Roles page, search for LambdaAnalyzeRole, check LambdaAnalyzeRole Click the Delete button, enter the Role name: LambdaAnalyzeRole 2. Clean up S3 service\nIn the search bar, enter S3 On the General purpose buckets page, select the bucket you want to delete Click the Empty button to delete all Objects in the bucket before deleting the Bucket Enter permanently delete and click Empty to delete the Objects Go back, select the bucket you want to delete, click Delete Enter your bucket name, click Delete Bucket 3. Clean up Lambda service\nIn the search bar, enter Lambda Select the functions you want to delete, click the Action button, choose Delete Enter confirm and click Delete 4. Clean up CloudWatch service\nIn the search bar, enter CloudWatch On the main CloudWatch page, on the left Navigation Panel select Log groups Select the Log group you want to delete, click Action, choose Delete log group(s) In the popup window, select Delete 5. Clean up API Gateway service\nIn the search bar, enter API Gateway Select the API you want to delete, click Delete on the right Enter confirm, click Delete Repeat for the remaining APIs Congratulations, you have completed the entire lab. This section will help you save costs by cleaning up unused AWS services. Thank you for taking the time to read and "
 },
 {
 	"uri": "//localhost:1313/categories/",
