@@ -197,6 +197,19 @@
                 href="//localhost:1313/vi/7-s3policy/"
                 />
   </url><url>
+    <loc>//localhost:1313/vi/8-demo/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/8-demo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/8-demo/"
+                />
+  </url><url>
     <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"

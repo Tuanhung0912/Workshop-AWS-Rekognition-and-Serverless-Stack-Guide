@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Cấu hình API Gateway :: AWS Rekognition</title>
+    <title>Video Demo tham khảo :: AWS Rekognition</title>
 
     
     <link href="/css/nucleus.css?1751693964" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/4-apigateway/">
+  <body class="" data-url="/vi/8-demo/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -326,7 +326,7 @@
     
     <li data-nav-id="/vi/4-apigateway/" title="Cấu hình API Gateway" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/vi/4-apigateway/">
@@ -498,7 +498,7 @@
     
     <li data-nav-id="/vi/8-demo/" title="Video Demo tham khảo" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/vi/8-demo/">
@@ -549,7 +549,7 @@
                   
                     
                     
-                      <option id="en" value="//localhost:1313/4-apigateway/">English</option>
+                      <option id="en" value="//localhost:1313/8-demo/">English</option>
                     
                   
               
@@ -563,7 +563,7 @@
                   
                     
                     
-                      <option id="vi" value="//localhost:1313/vi/4-apigateway/" selected>Tiếng Việt</option>
+                      <option id="vi" value="//localhost:1313/vi/8-demo/" selected>Tiếng Việt</option>
                     
                   
               
@@ -651,7 +651,7 @@
             
           
           
-            <a href='/vi/'>Intelligent Image Recognition</a> > Cấu hình API Gateway
+            <a href='/vi/'>Intelligent Image Recognition</a> > Video Demo tham khảo
           
         
           
@@ -666,8 +666,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#tổng-quan">Tổng Quan</a></li>
-        <li><a href="#nội-dung">Nội Dung</a></li>
+        <li><a href="#video-demo-tham-khảo-cho-toàn-bộ-bài-lab">Video Demo tham khảo cho toàn bộ bài lab</a></li>
       </ul>
     </li>
   </ul>
@@ -687,7 +686,7 @@
           
             <h1>
               
-              Cấu hình API Gateway
+              Video Demo tham khảo
             </h1>
           
 
@@ -695,12 +694,10 @@
 
 
 
-	<h3 id="tổng-quan">Tổng Quan</h3>
-<p>Trong phần này, bạn sẽ tiến hành cấu hình Amazon API Gateway – thành phần đóng vai trò cầu nối giữa giao diện người dùng (frontend) và backend serverless (AWS Lambda). API Gateway sẽ tiếp nhận các yêu cầu HTTP từ ứng dụng web (chẳng hạn như khi người dùng tải ảnh lên), sau đó chuyển tiếp các yêu cầu này đến Lambda function để xử lý. Việc cấu hình đúng API Gateway giúp đảm bảo hệ thống có thể giao tiếp ổn định, bảo mật và mở rộng linh hoạt. Đồng thời, bạn cũng sẽ cấu hình CORS (Cross-Origin Resource Sharing) để cho phép ứng dụng web truy cập tài nguyên API một cách hợp lệ, đặc biệt khi frontend và backend được triển khai trên các miền khác nhau. Đây là bước quan trọng giúp hoàn thiện quy trình giao tiếp giữa frontend React và các dịch vụ AWS phía sau.</p>
-<h3 id="nội-dung">Nội Dung</h3>
+	<h3 id="video-demo-tham-khảo-cho-toàn-bộ-bài-lab">Video Demo tham khảo cho toàn bộ bài lab</h3>
+<p>Trong phần Video Demo tham khảo, bạn sẽ được trải nghiệm trực quan toàn bộ quy trình triển khai hệ thống nhận diện ảnh thông minh với Amazon Rekognition và Serverless Stack. Video sẽ hướng dẫn bạn từng bước, từ việc cấu hình các dịch vụ AWS như Lambda, API Gateway, S3 cho đến việc xử lý ảnh: tải ảnh lên hệ thống, phân tích ảnh qua Rekognition, và lưu trữ kết quả phân tích vào S3. Qua video, bạn sẽ thấy rõ cách các thành phần này kết nối và tương tác với nhau trong thực tế, giúp bạn dễ dàng hình dung và nắm bắt quy trình, đồng thời cung cấp những mẹo và kỹ thuật để áp dụng vào dự án của mình.</p>
 <ul>
-<li><a href="/vi/4-apigateway/4.1-analyzeimage/">Cấu hình API Analyze Image</a></li>
-<li><a href="/vi/4-apigateway/4.2-uploadimage/">Cấu hình API Upload Image</a></li>
+<li><strong>Link Demo tham khảo:</strong> <a href="https://drive.google.com/file/d/1pbhyBITjpJ7RfvmhB65ouPAv472ZnxQP/view?usp=sharing">Tại đây</a></li>
 </ul>
 
 
@@ -877,7 +874,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -892,9 +888,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -978,6 +971,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -999,10 +993,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/3-lambdafunction/3.2-uploadfunction/" title="Cấu hình Upload Function"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/vi/7-s3policy/" title="Cập nhật Policy S3 Bucket (Tùy chọn)"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/4-apigateway/4.1-analyzeimage/" title="Cấu hình API Analyze Image" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/1-introduce/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
