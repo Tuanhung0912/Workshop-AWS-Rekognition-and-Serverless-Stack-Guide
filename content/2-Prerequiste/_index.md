@@ -12,6 +12,6 @@ Before starting to implement the intelligent image recognition AI system, you ne
 
 ### Content
 
-- [Clone và Setup Front-End](2.1-CloneFrontEnd/)
+- [Clone and Setup Front-End](2.1-CloneFrontEnd/)
 - [Create an S3 Bucket for storage](2.2-CreateS3Bucket/)
 - [Create IAM Role and Attach Policy](2.3-CreateIamRole/)

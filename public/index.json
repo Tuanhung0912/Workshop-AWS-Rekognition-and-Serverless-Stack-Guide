@@ -32,14 +32,14 @@
 	"title": "Prerequiste",
 	"tags": [],
 	"description": "",
-	"content": "Overview Before starting to implement the intelligent image recognition AI system, you need to prepare some basic components in the AWS environment to ensure the smooth process of analysis and storage. Specifically, you will create an S3 Bucket to store the original images uploaded by the user, as well as the analysis results in JSON format. Next, you need to configure an IAM Role with appropriate permissions such as AmazonS3FullAccess, AmazonRekognitionFullAccess, CloudWatchLogsFullAccess\u0026hellip; so that the Lambda function can call the Rekognition service, log data to CloudWatch, and write data to S3.\nContent Clone và Setup Front-End Create an S3 Bucket for storage Create IAM Role and Attach Policy "
+	"content": "Overview Before starting to implement the intelligent image recognition AI system, you need to prepare some basic components in the AWS environment to ensure the smooth process of analysis and storage. Specifically, you will create an S3 Bucket to store the original images uploaded by the user, as well as the analysis results in JSON format. Next, you need to configure an IAM Role with appropriate permissions such as AmazonS3FullAccess, AmazonRekognitionFullAccess, CloudWatchLogsFullAccess\u0026hellip; so that the Lambda function can call the Rekognition service, log data to CloudWatch, and write data to S3.\nContent Clone and Setup Front-End Create an S3 Bucket for storage Create IAM Role and Attach Policy "
 },
 {
 	"uri": "//localhost:1313/2-prerequiste/2.3-createiamrole/",
-	"title": "",
+	"title": "Create IAM Role and Attach Policy",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "Create a new IAM Role and Attach Policy to the Role 1. Search for and access the IAM service to create a Role\nIn the search bar, enter IAM After searching, click on the IAM service as shown below: On the IAM service page, in the left Navigation Panel Select Roles as shown below: On the Roles page, you can see a list of many popular and frequently used AWS Roles On the right side, click the Create Role button as follows: 2. Create a new Role and configure details\nOn the Create Role page, you can see that creating a Role involves 3 main steps as shown below: In the Select Trusted entity section:\nTrusted entity type: Select AWS Service In the Use Case section:\nService or use case: select Lambda Then click the Next button On the Step 2 Add permissions to Role page, you can see more than 1000+ Permission Policies as shown below: However, you only need to find a few Policies suitable for the Lab Here, we will search for and select 3 Policies to use: AmazonS3FullAccess, AmazonRekognitionFullAccess, CloudWatchLogsFullAccess. After selecting, click the Next button Results as shown in the images below: On the Step 3: Name, review, and create page, you will review all configurations from the previous two steps In the Role details section:\nRole name: set a name for the Role, e.g., LambdaAnalyzeRole Description: you can leave it as default or add notes as you wish In the Step 2: Add Permission section, you can review the Policies you added in detail After checking all the information, click Create Role to proceed Wait a few seconds, after creation the system will redirect you to the main Roles page and display a success notification as shown below: You have completed the necessary preparation steps to proceed to the next step.\n"
 },
 {
 	"uri": "//localhost:1313/3-lambdafunction/3.1-analyzefunction/",
