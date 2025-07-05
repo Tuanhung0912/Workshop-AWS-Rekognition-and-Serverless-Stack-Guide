@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title> :: AWS Rekognition</title>
+    <title>Clone and Setup Front-End :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751698649" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751698649" rel="stylesheet">
-    <link href="/css/hybrid.css?1751698649" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751698649" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751698649" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751698649" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751698649" rel="stylesheet">
-    <link href="/css/theme.css?1751698649" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751698649" rel="stylesheet">
+    <link href="/css/nucleus.css?1751701197" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751701197" rel="stylesheet">
+    <link href="/css/hybrid.css?1751701197" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751701197" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751701197" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751701197" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751701197" rel="stylesheet">
+    <link href="/css/theme.css?1751701197" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751701197" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751698649" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751701197" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751698649"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751701197"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751698649"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751698649"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751701197"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751701197"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751698649"></script>
+<script type="text/javascript" src="/js/search.js?1751701197"></script>
 
     
   </div>
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/" title="Prerequiste" class="dd-item 
         parent
         
         
         ">
       <a href="/2-prerequiste/">
-          
+           <b> 2. </b> Prerequiste
           
             <i class="fas fa-check read-icon"></i>
           
@@ -139,13 +139,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.1-clonefrontend/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.1-clonefrontend/" title="Clone and Setup Front-End" class="dd-item 
         
         active
         
         ">
       <a href="/2-prerequiste/2.1-clonefrontend/">
-          
+           <b> 2.1 </b> Clone and Setup Front-End
           
             <i class="fas fa-check read-icon"></i>
           
@@ -167,13 +167,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.2-creates3bucket/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.2-creates3bucket/" title="Create an S3 Bucket for Storage" class="dd-item 
         
         
         
         ">
       <a href="/2-prerequiste/2.2-creates3bucket/">
-          
+           <b> 2.2 </b> Create an S3 Bucket for Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -681,7 +681,7 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > <a href='/2-prerequiste/'></a> > 
+            <a href='/'>Intelligent Image Recognition</a> > <a href='/2-prerequiste/'>Prerequiste</a> > Clone and Setup Front-End
           
         
           
@@ -694,7 +694,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#clone-project-from-github-repository">Clone Project from Github Repository</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -710,7 +718,7 @@
           
             <h1>
               
-              
+              Clone and Setup Front-End
             </h1>
           
 
@@ -718,7 +726,88 @@
 
 
 
-	
+	<h3 id="clone-project-from-github-repository">Clone Project from Github Repository</h3>
+<p><strong>1. Clone the Project using the Github Repository link</strong></p>
+
+<div class="notices note" ><p>First, please download and install the Javascript runtime environment to be able to run the project.</p>
+</div>
+
+<ul>
+<li>Reference installation link: <a href="https://nodejs.org/en">node.js</a></li>
+</ul>
+<p><img src="/images/2.Prerequiste/nodejs_1.png" alt="Node js"></p>
+
+<div class="notices info" ><p>Next, please download and install a popular code editor such as Visual Studio Code or any equivalent code editor.</p>
+</div>
+
+<ul>
+<li>Reference installation link: <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_6.png" alt="Vs code Install"></p>
+<ul>
+<li>Next, go to the <a href="https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Guide.git">project&rsquo;s github link</a></li>
+<li>Click the green <strong>Code</strong> button and copy the Repository link as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/github_frontend.png" alt="Github Page"></p>
+<ul>
+<li>After accessing and copying the Repository link,</li>
+<li>Open <strong>Command Prompt</strong> in the folder where you want to store the Project as shown below</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_1.png" alt="Terminal Page 1"></p>
+<ul>
+<li>Clone the Project into your desired folder with the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/Tuanhung0912/Workshop-AWS-Rekognition-and-Serverless-Stack-Frontend.git
+</span></span></code></pre></div><p><img src="/images/2.Prerequiste/terminal_2.png" alt="Terminal Page 2"></p>
+<ul>
+<li>After cloning the Project from the Repository, you will see the result as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_3.png" alt="Terminal Page 3"></p>
+<p><strong>2. Open the Project and Setup</strong></p>
+<ul>
+<li>After successfully cloning the Project from the Repository,</li>
+<li>Now, quickly open the Project using <strong>Command Prompt</strong> as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/terminal_4.png" alt="Terminal Page 4"></p>
+<ul>
+<li>After entering the command in <strong>Command Prompt</strong> to open the project, you will see the result as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_1.png" alt="Vs Code 1"></p>
+<ul>
+<li>Next, install the necessary <strong>dependencies and libraries</strong> for the project to run in the <strong>node.js</strong> runtime environment.</li>
+<li>Open a <strong>Terminal</strong> in the Project and enter the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install
+</span></span></code></pre></div><ul>
+<li>Wait 1-2 minutes for the installation to complete.</li>
+<li>After installing the necessary libraries, a <strong>node_modules</strong> folder will appear in the Project as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_2.png" alt="Vs Code 2"></p>
+<ul>
+<li>Next, update the libraries for <strong>Vite</strong> with the following command:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm update vite
+</span></span></code></pre></div><ul>
+<li>After running the above command to update the necessary libraries for <strong>Vite</strong>, you will see the result as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_3.png" alt="Vs Code 3"></p>
+<p><strong>3. Run the Project</strong></p>
+<ul>
+<li>Next, enter the following command to start the website:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev
+</span></span></code></pre></div><ul>
+<li>After running the above command, the Terminal will display the following result:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/vscode_5.png" alt="Vs Code 4"></p>
+<ul>
+<li>Visit <a href="http://localhost:5173/">http://localhost:5173/</a> to launch the website.</li>
+<li>Wait 1-2 minutes for the Project to build on the first run.</li>
+<li>After the build is complete, the website will be displayed as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/webpage_2.png" alt="Web Page 1"></p>
+<p>You have completed the first step to set up and launch</p>
+
 
 
 
@@ -1032,10 +1121,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-prerequiste/" title=""> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-prerequiste/" title="Prerequiste"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/2-prerequiste/2.2-creates3bucket/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/2-prerequiste/2.2-creates3bucket/" title="Create an S3 Bucket for Storage" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1045,19 +1134,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751698649"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751698649"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751698649"></script>
-    <script src="/js/jquery.sticky.js?1751698649"></script>
-    <script src="/js/featherlight.min.js?1751698649"></script>
-    <script src="/js/highlight.pack.js?1751698649"></script>
+    <script src="/js/clipboard.min.js?1751701197"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751701197"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751701197"></script>
+    <script src="/js/jquery.sticky.js?1751701197"></script>
+    <script src="/js/featherlight.min.js?1751701197"></script>
+    <script src="/js/highlight.pack.js?1751701197"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751698649"></script>
-    <script src="/js/learn.js?1751698649"></script>
-    <script src="/js/hugo-learn.js?1751698649"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751701197"></script>
+    <script src="/js/learn.js?1751701197"></script>
+    <script src="/js/hugo-learn.js?1751701197"></script>
 
-    <link href="/mermaid/mermaid.css?1751698649" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751698649"></script>
+    <link href="/mermaid/mermaid.css?1751701197" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751701197"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

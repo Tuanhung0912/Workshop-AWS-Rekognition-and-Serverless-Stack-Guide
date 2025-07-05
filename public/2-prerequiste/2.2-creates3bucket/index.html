@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title> :: AWS Rekognition</title>
+    <title>Create an S3 Bucket for Storage :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751698649" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751698649" rel="stylesheet">
-    <link href="/css/hybrid.css?1751698649" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751698649" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751698649" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751698649" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751698649" rel="stylesheet">
-    <link href="/css/theme.css?1751698649" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751698649" rel="stylesheet">
+    <link href="/css/nucleus.css?1751701197" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751701197" rel="stylesheet">
+    <link href="/css/hybrid.css?1751701197" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751701197" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751701197" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751701197" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751701197" rel="stylesheet">
+    <link href="/css/theme.css?1751701197" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751701197" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751698649" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751701197" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751698649"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751701197"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751698649"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751698649"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751701197"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751701197"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751698649"></script>
+<script type="text/javascript" src="/js/search.js?1751701197"></script>
 
     
   </div>
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/" title="Prerequiste" class="dd-item 
         parent
         
         
         ">
       <a href="/2-prerequiste/">
-          
+           <b> 2. </b> Prerequiste
           
             <i class="fas fa-check read-icon"></i>
           
@@ -139,13 +139,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.1-clonefrontend/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.1-clonefrontend/" title="Clone and Setup Front-End" class="dd-item 
         
         
         
         ">
       <a href="/2-prerequiste/2.1-clonefrontend/">
-          
+           <b> 2.1 </b> Clone and Setup Front-End
           
             <i class="fas fa-check read-icon"></i>
           
@@ -167,13 +167,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.2-creates3bucket/" title="" class="dd-item 
+    <li data-nav-id="/2-prerequiste/2.2-creates3bucket/" title="Create an S3 Bucket for Storage" class="dd-item 
         
         active
         
         ">
       <a href="/2-prerequiste/2.2-creates3bucket/">
-          
+           <b> 2.2 </b> Create an S3 Bucket for Storage
           
             <i class="fas fa-check read-icon"></i>
           
@@ -681,7 +681,7 @@
             
           
           
-            <a href='/'>Intelligent Image Recognition</a> > <a href='/2-prerequiste/'></a> > 
+            <a href='/'>Intelligent Image Recognition</a> > <a href='/2-prerequiste/'>Prerequiste</a> > Create an S3 Bucket for Storage
           
         
           
@@ -694,7 +694,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#initialize-an-s3-bucket-for-storing-images-and-analysis-results">Initialize an S3 Bucket for storing images and analysis results</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -710,7 +718,7 @@
           
             <h1>
               
-              
+              Create an S3 Bucket for Storage
             </h1>
           
 
@@ -718,7 +726,94 @@
 
 
 
-	
+	<h3 id="initialize-an-s3-bucket-for-storing-images-and-analysis-results">Initialize an S3 Bucket for storing images and analysis results</h3>
+<p><strong>1. Access the Console and find the Amazon S3 service</strong></p>
+<ul>
+<li>Go to the <a href="https://aws.amazon.com/console/">AWS Management Console</a></li>
+<li>Then, log in to your account as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/awslogin_1.png" alt="AWS Console"></p>
+<ul>
+<li>After clicking the page, the login screen with required fields will appear as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/awslogin_2.png" alt="AWS Console"></p>
+
+<div class="notices warning" ><p>Note, this is a mandatory requirement to proceed to the next steps. If you do not have an account, please register for one.</p>
+</div>
+
+<ul>
+<li>
+<p><strong>Reference link for account creation:</strong> <a href="https://000001.awsstudygroup.com/">Create an account</a></p>
+</li>
+<li>
+<p>After successfully logging in, you will be redirected to the main page of the <strong>AWS Management Console</strong> as shown below:</p>
+</li>
+</ul>
+<p><img src="/images/2.Prerequiste/aws_mainpage.png" alt="AWS Console 2"></p>
+<ul>
+<li>In the search bar, type <strong>S3</strong></li>
+<li>Select the <strong>S3</strong> service</li>
+<li><strong>Result as shown below:</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_1.png" alt="S3 Bucket 1"></p>
+
+<div class="notices tip" ><p>You can star the services you use frequently during the process, making it more convenient for quick access.</p>
+</div>
+
+<ul>
+<li>On the main interface of the S3 service, click the <strong>Create Bucket</strong> button as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_2.png" alt="S3 Bucket 2"></p>
+<p><strong>2. Configure the S3 Bucket</strong></p>
+<ul>
+<li>After clicking <strong>Create Bucket</strong>, you will be taken to the bucket creation section as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_3.png" alt="S3 Bucket 3"></p>
+<p>In the <strong>General configuration</strong> section:</p>
+<ul>
+<li>AWS Region: <strong>Asia Pacific (Singapore) ap-southeast-1</strong> (or any region you want to use)</li>
+<li>Bucket type: select <strong>General purpose</strong></li>
+<li>Bucket name: enter <strong>rekognition-image-upload-0912</strong></li>
+</ul>
+<p>In the <strong>Object Ownership</strong> section:</p>
+<ul>
+<li>Select <strong>ACLs disable (recommended)</strong></li>
+</ul>
+
+<div class="notices info" ><p>Note, your Bucket Name must be unique and not duplicate any other buckets.</p>
+</div>
+
+<p><img src="/images/2.Prerequiste/s3bucket_4.png" alt="S3 Bucket 4"></p>
+<p>In the <strong>Block Public Access setting for this bucket</strong> section:</p>
+<ul>
+<li>Uncheck <strong>Block all public access</strong></li>
+<li>Uncheck <strong>Block public access to buckets and objects granted through new access control lists (ACLs)</strong></li>
+<li>Uncheck <strong>Block public access to buckets and objects granted through any access control lists (ACLs)</strong></li>
+<li>Uncheck <strong>Block public access to buckets and objects granted through new public bucket or access point policies</strong></li>
+<li>Uncheck <strong>Block public and cross-account access to buckets and objects through any public bucket or access point policies</strong></li>
+<li>Check <strong>I acknowledge that the current settings might result in this bucket and the objects within becoming public.</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_5.png" alt="S3 Bucket 5"></p>
+<p>In the <strong>Bucket Versioning</strong> section:</p>
+<ul>
+<li>Bucket Versioning: select <strong>Disable</strong></li>
+</ul>
+<p>In the <strong>Default Encryption</strong> section:</p>
+<ul>
+<li>Encryption type: select <strong>Server-side encryption with Amazon S3 managed keys (SSE-S3)</strong></li>
+<li>Bucket key: select <strong>Enable</strong></li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_6.png" alt="S3 Bucket 6"></p>
+<ul>
+<li>After completing the above steps, scroll to the bottom of the page and click <strong>Create Bucket</strong> as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_7.png" alt="S3 Bucket 7"></p>
+<ul>
+<li>Wait a few seconds, you will be redirected to the bucket list page and a successful bucket creation notification will appear as shown below:</li>
+</ul>
+<p><img src="/images/2.Prerequiste/s3bucket_8.png" alt="S3 Bucket 8"></p>
+<p>You have completed the step of creating an S3 Bucket to store images and</p>
+
 
 
 
@@ -1035,7 +1130,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/2-prerequiste/2.1-clonefrontend/" title=""> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/2-prerequiste/2.1-clonefrontend/" title="Clone and Setup Front-End"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/2-prerequiste/2.3-createiamrole/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1048,19 +1143,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751698649"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751698649"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751698649"></script>
-    <script src="/js/jquery.sticky.js?1751698649"></script>
-    <script src="/js/featherlight.min.js?1751698649"></script>
-    <script src="/js/highlight.pack.js?1751698649"></script>
+    <script src="/js/clipboard.min.js?1751701197"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751701197"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751701197"></script>
+    <script src="/js/jquery.sticky.js?1751701197"></script>
+    <script src="/js/featherlight.min.js?1751701197"></script>
+    <script src="/js/highlight.pack.js?1751701197"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751698649"></script>
-    <script src="/js/learn.js?1751698649"></script>
-    <script src="/js/hugo-learn.js?1751698649"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751701197"></script>
+    <script src="/js/learn.js?1751701197"></script>
+    <script src="/js/hugo-learn.js?1751701197"></script>
 
-    <link href="/mermaid/mermaid.css?1751698649" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751698649"></script>
+    <link href="/mermaid/mermaid.css?1751701197" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751701197"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

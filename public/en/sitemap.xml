@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/2-prerequiste/2.1-clonefrontend/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-prerequiste/2.1-clonefrontend/"
+                />
+  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -28,19 +41,8 @@
                 href="//localhost:1313/1-introduce/"
                 />
   </url><url>
-    <loc>//localhost:1313/2-prerequiste/2.1-clonefrontend/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.1-clonefrontend/"
-                />
-  </url><url>
     <loc>//localhost:1313/2-prerequiste/2.2-creates3bucket/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
@@ -50,6 +52,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/2-prerequiste/2.2-creates3bucket/"
+                />
+  </url><url>
+    <loc>//localhost:1313/2-prerequiste/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-prerequiste/"
                 />
   </url><url>
     <loc>//localhost:1313/2-prerequiste/2.3-createiamrole/</loc>
@@ -62,18 +77,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/2-prerequiste/2.3-createiamrole/"
-                />
-  </url><url>
-    <loc>//localhost:1313/2-prerequiste/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-prerequiste/"
                 />
   </url><url>
     <loc>//localhost:1313/3-lambdafunction/3.1-analyzefunction/</loc>
