@@ -2,249 +2,249 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/vi/3-lambdafunction/3.1-analyzefunction/</loc>
+    <loc>/vi/3-lambdafunction/3.1-analyzefunction/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-lambdafunction/3.1-analyzefunction/"
+                href="/3-lambdafunction/3.1-analyzefunction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/3.1-analyzefunction/"
+                href="/vi/3-lambdafunction/3.1-analyzefunction/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/4-apigateway/4.1-analyzeimage/</loc>
+    <loc>/vi/4-apigateway/4.1-analyzeimage/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-apigateway/4.1-analyzeimage/"
+                href="/4-apigateway/4.1-analyzeimage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-apigateway/4.1-analyzeimage/"
+                href="/vi/4-apigateway/4.1-analyzeimage/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/</loc>
+    <loc>/vi/2-prerequiste/2.1-clonefrontend/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.1-clonefrontend/"
+                href="/2-prerequiste/2.1-clonefrontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.1-clonefrontend/"
+                href="/vi/2-prerequiste/2.1-clonefrontend/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/1-introduce/</loc>
+    <loc>/vi/1-introduce/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/1-introduce/"
+                href="/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/1-introduce/"
+                href="/vi/1-introduce/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/</loc>
+    <loc>/vi/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/"
+                href="/vi/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-prerequiste/</loc>
+    <loc>/vi/2-prerequiste/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/"
+                href="/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/"
+                href="/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/4-apigateway/4.2-uploadimage/</loc>
+    <loc>/vi/4-apigateway/4.2-uploadimage/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-apigateway/4.2-uploadimage/"
+                href="/4-apigateway/4.2-uploadimage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-apigateway/4.2-uploadimage/"
+                href="/vi/4-apigateway/4.2-uploadimage/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3-lambdafunction/3.2-uploadfunction/</loc>
+    <loc>/vi/3-lambdafunction/3.2-uploadfunction/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-lambdafunction/3.2-uploadfunction/"
+                href="/3-lambdafunction/3.2-uploadfunction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/3.2-uploadfunction/"
+                href="/vi/3-lambdafunction/3.2-uploadfunction/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-prerequiste/2.2-creates3bucket/</loc>
+    <loc>/vi/2-prerequiste/2.2-creates3bucket/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.2-creates3bucket/"
+                href="/2-prerequiste/2.2-creates3bucket/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.2-creates3bucket/"
+                href="/vi/2-prerequiste/2.2-creates3bucket/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/3-lambdafunction/</loc>
+    <loc>/vi/3-lambdafunction/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/3-lambdafunction/"
+                href="/3-lambdafunction/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/"
+                href="/vi/3-lambdafunction/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/2-prerequiste/2.3-createiamrole/</loc>
+    <loc>/vi/2-prerequiste/2.3-createiamrole/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/2-prerequiste/2.3-createiamrole/"
+                href="/2-prerequiste/2.3-createiamrole/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/2-prerequiste/2.3-createiamrole/"
+                href="/vi/2-prerequiste/2.3-createiamrole/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/4-apigateway/</loc>
+    <loc>/vi/4-apigateway/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/4-apigateway/"
+                href="/4-apigateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/4-apigateway/"
+                href="/vi/4-apigateway/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/5-results/</loc>
+    <loc>/vi/5-results/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/5-results/"
+                href="/5-results/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/5-results/"
+                href="/vi/5-results/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/6-cloudwatch/</loc>
+    <loc>/vi/6-cloudwatch/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/6-cloudwatch/"
+                href="/6-cloudwatch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/6-cloudwatch/"
+                href="/vi/6-cloudwatch/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/7-s3policy/</loc>
+    <loc>/vi/7-s3policy/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/7-s3policy/"
+                href="/7-s3policy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/7-s3policy/"
+                href="/vi/7-s3policy/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/8-demo/</loc>
+    <loc>/vi/8-demo/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-demo/"
+                href="/8-demo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-demo/"
+                href="/vi/8-demo/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/9-cleanup/</loc>
+    <loc>/vi/9-cleanup/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/9-cleanup/"
+                href="/9-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/9-cleanup/"
+                href="/vi/9-cleanup/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/categories/</loc>
+    <loc>/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/categories/"
+                href="/vi/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/tags/</loc>
+    <loc>/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/tags/"
+                href="/vi/tags/"
                 />
   </url>
 </urlset>
