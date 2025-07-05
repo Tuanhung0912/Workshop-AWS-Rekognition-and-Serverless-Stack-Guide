@@ -15,6 +15,32 @@
                 href="//localhost:1313/2-prerequiste/2.1-clonefrontend/"
                 />
   </url><url>
+    <loc>//localhost:1313/3-lambdafunction/3.1-analyzefunction/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-lambdafunction/3.1-analyzefunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-lambdafunction/3.1-analyzefunction/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4-apigateway/4.1-analyzeimage/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-apigateway/4.1-analyzeimage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-apigateway/4.1-analyzeimage/"
+                />
+  </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -39,6 +65,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="//localhost:1313/1-introduce/"
+                />
+  </url><url>
+    <loc>//localhost:1313/4-apigateway/4.2-uploadimage/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-apigateway/4.2-uploadimage/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-apigateway/4.2-uploadimage/"
+                />
+  </url><url>
+    <loc>//localhost:1313/3-lambdafunction/3.2-uploadfunction/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-lambdafunction/3.2-uploadfunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-lambdafunction/3.2-uploadfunction/"
                 />
   </url><url>
     <loc>//localhost:1313/2-prerequiste/2.2-creates3bucket/</loc>
@@ -67,6 +119,19 @@
                 href="//localhost:1313/2-prerequiste/"
                 />
   </url><url>
+    <loc>//localhost:1313/3-lambdafunction/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-lambdafunction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-lambdafunction/"
+                />
+  </url><url>
     <loc>//localhost:1313/2-prerequiste/2.3-createiamrole/</loc>
     <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,67 +145,8 @@
                 href="//localhost:1313/2-prerequiste/2.3-createiamrole/"
                 />
   </url><url>
-    <loc>//localhost:1313/3-lambdafunction/3.1-analyzefunction/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/3.1-analyzefunction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-lambdafunction/3.1-analyzefunction/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-lambdafunction/3.2-uploadfunction/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/3.2-uploadfunction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-lambdafunction/3.2-uploadfunction/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-lambdafunction/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-lambdafunction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-lambdafunction/"
-                />
-  </url><url>
-    <loc>//localhost:1313/4-apigateway/4.1-analyzeimage/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/4-apigateway/4.1-analyzeimage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/4-apigateway/4.1-analyzeimage/"
-                />
-  </url><url>
-    <loc>//localhost:1313/4-apigateway/4.2-uploadimage/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/4-apigateway/4.2-uploadimage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/4-apigateway/4.2-uploadimage/"
-                />
-  </url><url>
     <loc>//localhost:1313/4-apigateway/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
