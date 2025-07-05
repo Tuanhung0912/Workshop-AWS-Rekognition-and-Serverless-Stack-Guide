@@ -12,21 +12,21 @@
     <title>Cập nhật Policy S3 Bucket (Tùy chọn) :: AWS Rekognition</title>
 
     
-    <link href="/css/nucleus.css?1751690349" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1751690349" rel="stylesheet">
-    <link href="/css/hybrid.css?1751690349" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1751690349" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1751690349" rel="stylesheet">
-    <link href="/css/auto-complete.css?1751690349" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1751690349" rel="stylesheet">
-    <link href="/css/theme.css?1751690349" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1751690349" rel="stylesheet">
+    <link href="/css/nucleus.css?1751693336" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1751693336" rel="stylesheet">
+    <link href="/css/hybrid.css?1751693336" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1751693336" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1751693336" rel="stylesheet">
+    <link href="/css/auto-complete.css?1751693336" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1751693336" rel="stylesheet">
+    <link href="/css/theme.css?1751693336" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1751693336" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1751690349" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1751693336" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1751690349"></script>
+    <script src="/js/jquery-3.3.1.min.js?1751693336"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1751690349"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1751690349"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1751693336"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1751693336"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1751690349"></script>
+<script type="text/javascript" src="/js/search.js?1751693336"></script>
 
     
   </div>
@@ -521,6 +521,18 @@
               
               
                   
+                    
+                    
+                      <option id="en" value="//localhost:1313/7-s3policy/">English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
               
                   
                     
@@ -657,6 +669,98 @@
 
 
 	<h3 id="cập-nhật-cấu-hình-policy-cho-s3-bucket-để-có-thể-xem-thông-tin-ảnh-và-kết-quả-phân-tích">Cập nhật cấu hình Policy cho S3 Bucket để có thể xem thông tin ảnh và kết quả phân tích</h3>
+
+<div class="notices note" ><p>Lưu ý, đây là phần cấu hình cho Policy của S3 Bucket, để có thể xem trực tiếp ảnh và kết quả phân tích hình ảnh thông qua URL công khai, bạn có thể xem để tham khảo thêm</p>
+</div>
+
+<p><strong>1. Truy cập trang chi tiết thông tin phần S3 Bucket Policy</strong></p>
+<ul>
+<li>Ở phần 5, chúng ta đã có thể thực hiện chức năng phân tích hình ảnh và Upload hình ảnh lên <strong>S3 Bucket</strong></li>
+<li>Tuy nhiên việc xem ảnh và kết quả sẽ bị từ chối vì chưa cài đặt <strong>Policy cho S3 bucket</strong></li>
+<li>Đầu tiên, ta bấm vào hình ảnh như sau:</li>
+</ul>
+<p><img src="/images/5.Results/rs_26.png" alt="RS 26"></p>
+<ul>
+<li>Sau đó, hệ thống sẽ chuyển người dùng đến trang xem thông tin chi tiết của <strong>Object</strong> đó</li>
+<li>Tại trang thông tin chi tiết của <strong>Object (hình ảnh)</strong>, nhìn sang góc bên phải ta sẽ thấy một mục <strong>Object URL</strong></li>
+<li>Đây chính là <strong>URL của Object</strong>, bạn có thể <strong>click chuột</strong> hoặc <strong>copy</strong> ra một tab trình duyệt mới để xem:</li>
+<li><strong>Kết quả hiển thị như các hình ảnh bên dưới:</strong></li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_1.png" alt="Bucket 1"></p>
+<p><img src="/images/7.S3Policy/bucket_2.png" alt="Bucket 2"></p>
+<ul>
+<li>Sau khi truy cập đường link URL của Object, ta có thể thấy được hệ thống báo <strong>Access Denied</strong> và không hiển thị được hình ảnh</li>
+</ul>
+<p><strong>2. Cấu hình cho S3 Bucket Policy để xem ảnh và kết quả phân tích</strong></p>
+<ul>
+<li>Quay trở lại trang danh sách <strong>Bucket</strong>, bấm vào tên <strong>Bucket</strong></li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_3.png" alt="Bucket 3"></p>
+<ul>
+<li>Tại đây, bạn sẽ chuyển sang tab <strong>Permission</strong> như hình sau:</li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_4.png" alt="Bucket 4"></p>
+<ul>
+<li>Tại trang thông tin của tab <strong>Permission</strong></li>
+<li>Lăn chuột xuống một đoạn</li>
+<li>Bạn sẽ thấy được phần <strong>Bucket policy</strong>, nhìn qua bên phải bấm button <strong>Edit</strong></li>
+<li>Điều này cho phép bạn chỉnh sửa <strong>policy</strong> của <strong>Bucket</strong></li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_5.png" alt="Bucket 5"></p>
+<ul>
+<li>Sau khi chuyển đến phần <strong>Edit Bucket Policy</strong>, bạn có thể thấy được phần chúng ta sẽ chỉnh sửa là thêm vào một đoạn <strong>JSON Script</strong> như hình ảnh bên dưới:</li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_6.png" alt="Bucket 6"></p>
+<ul>
+<li>Tại đây, bạn sẽ tiến hành cấu hình cho <strong>Bucket policy</strong> bằng đoạn mã <strong>JSON</strong></li>
+<li>Bạn sẽ nhập đoạn cấu hình với cấu trúc như sau:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,  <span style="color:#75715e">// Phiên bản của policy, theo chuẩn của AWS IAM
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#f92672">&#34;Statement&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Sid&#34;</span>: <span style="color:#e6db74">&#34;AllowPublicReadAccessToImagesAndResultFolders&#34;</span>,  <span style="color:#75715e">// Mã định danh cho policy statement (có thể thay đổi để dễ nhận diện)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,  <span style="color:#75715e">// Chỉ định hành động &#34;Allow&#34; (cho phép) đối với các hành động được mô tả dưới đây
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#f92672">&#34;Principal&#34;</span>: <span style="color:#e6db74">&#34;*&#34;</span>,  <span style="color:#75715e">// Chỉ định rằng tất cả người dùng (Public Access) đều có thể thực hiện hành động này
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#f92672">&#34;Action&#34;</span>: <span style="color:#e6db74">&#34;s3:GetObject&#34;</span>,  <span style="color:#75715e">// Cấp quyền thực hiện hành động &#34;s3:GetObject&#34;, tức là cho phép người dùng đọc (GET) đối tượng từ S3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#f92672">&#34;Resource&#34;</span>: [  <span style="color:#75715e">// Cấp quyền cho các tài nguyên cụ thể dưới đây
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#34;arn:aws:s3:::your-bucket-name/images/*&#34;</span>,  <span style="color:#75715e">// Cho phép truy cập đối với các đối tượng trong thư mục &#34;images&#34; của bucket
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#34;arn:aws:s3:::your-bucket-name/results/*&#34;</span>  <span style="color:#75715e">// Cho phép truy cập đối với các đối tượng trong thư mục &#34;results&#34; của bucket
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+<div class="notices info" ><p>Lưu ý, hãy thay thế bằng tên S3 Bucket của bạn</p>
+</div>
+
+<ul>
+<li>Sau khi cấu hình như đoạn mã trên, ta sẽ có kết quả như hình bên dưới</li>
+<li>Ta tiến hành lưu thay đổi bằng cách bấm vào Button <strong>Save changes</strong></li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_7.png" alt="Bucket 7"></p>
+<p><img src="/images/7.S3Policy/bucket_8.png" alt="Bucket 8"></p>
+<ul>
+<li>Đợi một vài giây, hệ thống xử lý và sẽ trả về <strong>thông báo thành công</strong> cùng với phần <strong>Bucket policy</strong> đã được cập nhật trên trang web như sau:</li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_9.png" alt="Bucket 9"></p>
+<ul>
+<li>Quay trở lại trang hiện thị thông tin chi tiết của <strong>Object</strong></li>
+<li>Truy cập đường link <strong>URL của Object</strong></li>
+<li><strong>Kết quả sẽ hiển thị như các hình ảnh bên dưới:</strong></li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_1.png" alt="Bucket 1"></p>
+<ul>
+<li>Tại đây, ta đã có thể xem được hình ảnh trực tiếp thông qua <strong>URL công khai của object</strong> như hình ảnh dưới đây:</li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_10.png" alt="Bucket 10"></p>
+<ul>
+<li>Tương tự, trong phần <strong>Edit Policy</strong> của Bucket ta cũng đã đồng thời cấu hình cho thư mục <strong>/result</strong> để có thể xem được kết quả phân tích hình ảnh như hình ảnh bên dưới:</li>
+</ul>
+<p><img src="/images/7.S3Policy/bucket_11.png" alt="Bucket 11"></p>
+<p><img src="/images/7.S3Policy/bucket_12.png" alt="Bucket 12"></p>
+<p><img src="/images/7.S3Policy/bucket_13.png" alt="Bucket 13"></p>
+<p>Qua phần này, bạn có thể tham khảo thêm cách làm sao để chúng ta có thể xem được hình ảnh và kết quả phân tích một cách trực tiếp nhanh chóng hơn.</p>
 
 
 
@@ -948,19 +1052,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1751690349"></script>
-    <script src="/js/perfect-scrollbar.min.js?1751690349"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1751690349"></script>
-    <script src="/js/jquery.sticky.js?1751690349"></script>
-    <script src="/js/featherlight.min.js?1751690349"></script>
-    <script src="/js/highlight.pack.js?1751690349"></script>
+    <script src="/js/clipboard.min.js?1751693336"></script>
+    <script src="/js/perfect-scrollbar.min.js?1751693336"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1751693336"></script>
+    <script src="/js/jquery.sticky.js?1751693336"></script>
+    <script src="/js/featherlight.min.js?1751693336"></script>
+    <script src="/js/highlight.pack.js?1751693336"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1751690349"></script>
-    <script src="/js/learn.js?1751690349"></script>
-    <script src="/js/hugo-learn.js?1751690349"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1751693336"></script>
+    <script src="/js/learn.js?1751693336"></script>
+    <script src="/js/hugo-learn.js?1751693336"></script>
 
-    <link href="/mermaid/mermaid.css?1751690349" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1751690349"></script>
+    <link href="/mermaid/mermaid.css?1751693336" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1751693336"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

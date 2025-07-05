@@ -160,6 +160,30 @@
                 href="//localhost:1313/5-results/"
                 />
   </url><url>
+    <loc>//localhost:1313/6-cloudwatch/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-cloudwatch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-cloudwatch/"
+                />
+  </url><url>
+    <loc>//localhost:1313/7-s3policy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-s3policy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-s3policy/"
+                />
+  </url><url>
     <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
